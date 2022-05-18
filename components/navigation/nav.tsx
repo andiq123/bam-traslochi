@@ -1,0 +1,66 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faPlane } from "@fortawesome/free-solid-svg-icons";
+import cargo from "../../public/images/cargo.png";
+import Image from "next/image";
+import Link from "next/link";
+
+const navLinks = [
+  {
+    title: "Home",
+    href: "/",
+  },
+  {
+    title: "Chi siamo",
+    href: "/about",
+  },
+  // {
+  //   title: "Traslochi",
+  //   href: "/traslochi",
+  // },
+  {
+    title: "Contatti",
+    href: "/contact",
+  },
+];
+
+const Nav = () => {
+  return (
+    <div className="navbar bg-base-100 bg-opacity-50 backdrop-blur-md fixed z-20">
+      <div className="flex-1">
+        <a className="btn btn-ghost normal-case text-2xl font-bold flex gap-2">
+          <Image
+            src={cargo}
+            className="max-w-sm rounded-lg shadow-2xl"
+            width={50}
+            height={50}
+          />
+          Bam Traslochi
+        </a>
+      </div>
+      <div className="flex-none">
+        <ul className="menu menu-horizontal p-0 lg:flex hidden gap-2">
+          {navLinks.map((link) => (
+            <li className="font-bold" key={link.title}>
+              <Link href={link.href}>{link.title.toUpperCase()}</Link>
+            </li>
+          ))}
+        </ul>
+
+        <ul className="menu menu-horizontal lg:hidden z-10 dropdown dropdown-end">
+          <li tabIndex={0}>
+            <FontAwesomeIcon icon={faPlane} className="text-3xl rounded-lg" />
+            <ul className="menu bg-base-200 bg-opacity-70 backdrop-blur-md rounded-box dropdown-content w-52">
+              {navLinks.map((link) => (
+                <li className="font-bold" key={link.title}>
+                  <Link href={link.href}>{link.title.toUpperCase()}</Link>
+                </li>
+              ))}
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default Nav;
