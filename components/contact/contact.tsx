@@ -22,10 +22,11 @@ const Contact = ({ details }: Props) => {
       <h1 className="text-center font-bold text-5xl max-w-6xl mx-auto pt-10 ">
         Ci trovi qui!
       </h1>
-      <div className="flex  max-w-6xl mx-auto gap-10 align-middle justify-center my-10">
-        <div className="p-10 flex-shrink-0 w-full max-w-sm shadow-2xl rounded-2xl bg-base-200">
+      <div className="flex max-w-6xl mx-auto gap-10 align-middle justify-center my-10">
+        <div className="p-10 flex-shrink-0 w-full max-w-sm shadow-2xl rounded-2xl bg-base-100">
           <ContactField
             item={{ icon: faPhone, label: "Telefono", value: Telefono }}
+            isClickable={true}
           />
           <ContactField
             item={{ icon: faAddressCard, label: "Contatto", value: Contatto }}
@@ -45,6 +46,7 @@ const Contact = ({ details }: Props) => {
             item={{ icon: faAddressBook, label: "CAP", value: CAP }}
           />
         </div>
+
         <Maps />
       </div>
     </div>

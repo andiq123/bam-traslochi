@@ -9,16 +9,13 @@ const navLinks = [
     title: "Home",
     href: "/",
   },
+  { title: "Servizi", href: "/servizi" },
   {
     title: "Chi siamo",
     href: "/about",
   },
-  // {
-  //   title: "Traslochi",
-  //   href: "/traslochi",
-  // },
   {
-    title: "Contatti",
+    title: "Trovaci",
     href: "/contact",
   },
 ];

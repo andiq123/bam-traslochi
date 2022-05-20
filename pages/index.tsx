@@ -4,6 +4,7 @@ import Head from "next/head";
 import agent from "../agent/agent";
 import About from "../components/about";
 import Contact from "../components/contact/contact";
+import Footer from "../components/footer";
 import Initial from "../components/initial";
 import Tasks from "../components/tasks";
 import { ContactDetails } from "../types/contactDetails";
@@ -31,6 +32,7 @@ const Home = ({ tasks, contactDetails }: Props) => {
       <Tasks tasks={tasks}></Tasks>
       <About />
       <Contact details={contactDetails}></Contact>
+      <Footer />
     </div>
   );
 };
