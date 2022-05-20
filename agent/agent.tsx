@@ -1,4 +1,4 @@
-import { Details } from "../types/details";
+import { ContactDetails } from "../types/contactDetails";
 import { ErrorResponseModel } from "../types/error";
 
 const baseUrl = "http://localhost:3000/api/";
@@ -29,7 +29,7 @@ const requests = {
 };
 
 const agent = {
-  contact: () => requests.get<Details>("contact"),
+  contact: () => requests.get<ContactDetails>("contact"),
   tasks: () => requests.get<any>("tasks"),
 };
 

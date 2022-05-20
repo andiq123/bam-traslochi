@@ -1,19 +1,17 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { Details } from "../../../types/details";
+import { ContactDetails } from "../../../types/contactDetails";
 
 export default function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Details>
+  res: NextApiResponse<ContactDetails>
 ) {
   res.statusCode = 200;
   res.json({
-    CompanyName: "Super Mart of the West",
-    ContactName: "Maria Anders",
-    ContactTitle: "Sales Representative",
-    Address: "702 SW 8th Street",
-    City: "Bentonville",
-    PostalCode: "72716",
-    Country: "USA",
-    Phone: "(603) 555-7555",
+    Azienda: "Bam S.R.L.",
+    Contatto: "Andrei ",
+    Indirizzo: "Via Caluri, 58",
+    Città: "Voillafranca di Verona",
+    CAP: "37069",
+    Telefono: "+393277786351",
   });
 }
