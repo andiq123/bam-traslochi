@@ -45,7 +45,11 @@ const Nav = () => {
 
         <ul className="menu menu-horizontal lg:hidden z-10 dropdown dropdown-end">
           <li tabIndex={0}>
-            <FontAwesomeIcon icon={faBars} className="text-3xl rounded-lg" />
+            <FontAwesomeIcon
+              icon={faBars}
+              className="text-3xl rounded-lg"
+              swapOpacity={true}
+            />
             <ul className="menu bg-base-100 bg-opacity-90 backdrop-blur-xl rounded-box dropdown-content w-52">
               {navLinks.map((link) => (
                 <li className="font-bold" key={link.title}>
