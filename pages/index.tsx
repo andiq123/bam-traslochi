@@ -46,8 +46,8 @@ const Home = ({ tasks, contactDetails }: Props) => {
 };
 
 export async function getStaticProps() {
-  const tasks = await agent.tasks();
-  const contactDetails = await agent.contact();
+  const tasks = await agent.tasks;
+  const contactDetails = await agent.contact;
 
   return {
     props: { tasks, contactDetails },
