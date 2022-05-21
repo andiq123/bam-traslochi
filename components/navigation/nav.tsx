@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faPlane } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import cargo from "../../public/images/cargo.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,16 +7,16 @@ import Link from "next/link";
 const navLinks = [
   {
     title: "Home",
-    href: "/",
+    href: "#initial",
   },
-  { title: "Servizi", href: "/servizi" },
+  { title: "Servizi", href: "#servizi" },
   {
     title: "Chi siamo",
-    href: "/about",
+    href: "#about",
   },
   {
     title: "Trovaci",
-    href: "/contact",
+    href: "#contact",
   },
 ];
 
@@ -45,8 +45,8 @@ const Nav = () => {
 
         <ul className="menu menu-horizontal lg:hidden z-10 dropdown dropdown-end">
           <li tabIndex={0}>
-            <FontAwesomeIcon icon={faPlane} className="text-3xl rounded-lg" />
-            <ul className="menu bg-base-200 bg-opacity-70 backdrop-blur-md rounded-box dropdown-content w-52">
+            <FontAwesomeIcon icon={faBars} className="text-3xl rounded-lg" />
+            <ul className="menu bg-base-100 bg-opacity-90 backdrop-blur-xl rounded-box dropdown-content w-52">
               {navLinks.map((link) => (
                 <li className="font-bold" key={link.title}>
                   <Link href={link.href}>{link.title.toUpperCase()}</Link>

@@ -18,7 +18,7 @@ const requests = {
       const dataJson = (await response.json()) as T;
       return dataJson;
     } catch (error) {
-      // console.error(error);
+      // .error(error);
       return {
         status: 500,
         message: "Internal server error",

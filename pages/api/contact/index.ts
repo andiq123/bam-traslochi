@@ -10,7 +10,7 @@ export default function handler(
     Azienda: "Bam S.R.L.",
     Contatto: "Andrei ",
     Indirizzo: "Via Caluri, 58",
-    Città: "Voillafranca di Verona",
+    Città: "Villafranca di Verona",
     CAP: "37069",
     Telefono: "+393277786351",
   });
