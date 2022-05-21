@@ -42,7 +42,7 @@ export const getTasks = (): Task[] => {
     {
       id: 5,
       title: "Traslochi Nazionali E Internazionali",
-      imgUrl: "/images/traslochi-nazionali.jpg",
+      imgUrl: "/images/traslochi-internazionali.jpg",
     },
     {
       id: 6,

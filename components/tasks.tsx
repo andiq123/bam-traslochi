@@ -19,18 +19,16 @@ const Tasks = ({ tasks }: Props) => {
           {tasks.map((task) => (
             <div
               key={task.id}
-              className="w-full p-10 flex items-center hover:bg-secondary-focus hover:rounded-lg transition-all duration-200 hover:scale-105"
+              className="flex w-full items-center p-2 hover:bg-secondary-focus hover:rounded-lg transition-all duration-200 hover:scale-105"
             >
-              <div className="shadow-2xl overflow-hidden rounded-3xl lg:w-60 h-fit w-full">
-                <Image
-                  src={"/" + task.imgUrl}
-                  alt={task.title}
-                  width={"100%"}
-                  height={"65%"}
-                  layout="responsive"
-                  className="rounded-3xl"
-                />
-              </div>
+              <Image
+                src={task.imgUrl}
+                alt={task.title}
+                width={"200"}
+                height={"150"}
+                objectFit="cover"
+                className=" overflow-hidden rounded-3xl lg:w-60 w-full"
+              />
 
               <h1 className="text-3xl font-bold ml-20 text-secondary-content">
                 {task.title}

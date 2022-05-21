@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useMemo, useState } from "react";
 
 interface Props {
@@ -34,7 +33,7 @@ const Modal = ({ isOpen, closeModal, phoneNumber }: Props) => {
   };
 
   return (
-    <div className="mt-20">
+    <div>
       <input
         type="checkbox"
         className="modal-toggle"
@@ -44,12 +43,12 @@ const Modal = ({ isOpen, closeModal, phoneNumber }: Props) => {
       <div className="modal">
         <div className="modal-box justify-center flex flex-col gap-5 items-center">
           <h3 className="font-bold text-lg">Conttami su</h3>
-          <label className="input-group w-fit">
+          <label className="input-group w-full">
             <span>Nome</span>
             <input
               type="text"
               placeholder="Inserisci il tuo nome"
-              className="input input-bordered"
+              className="input input-bordered w-full"
               onInput={(e: any) => setName(capitalize(e.target.value))}
             />
           </label>
@@ -59,8 +58,8 @@ const Modal = ({ isOpen, closeModal, phoneNumber }: Props) => {
             </p>
           )}
           {name && (
-            <div className="flex flex-wrap w-full">
-              <button className="w-1/2 rounded-md">
+            <div className="flex flex-wrap w-full justify-center">
+              <button className="w-1/2 rounded-md btn bg-green-700 text-white">
                 <a
                   href={getLinkWhastapp()}
                   className="btn btn-ghost normal-case text-2xl font-bold flex gap-2"

@@ -17,7 +17,7 @@ interface Props {
 const Contact = ({ details, openModal }: Props) => {
   const { Azienda, CAP, Città, Contatto, Indirizzo, Telefono } = details;
   return (
-    <div id="contact">
+    <div id="contact" className="lg:mt-56">
       <h1 className="text-center font-bold text-5xl max-w-6xl mx-auto pt-10 ">
         Ci trovi qui!
       </h1>

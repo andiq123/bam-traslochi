@@ -1,15 +1,19 @@
+import Image from "next/image";
+import traslochi from "../public/images/traslochi.jpg";
+
 const About = () => {
   return (
-    <div id="about">
-      <div className="lg:ml-96 ml-64 absolute mt-20 -z-10">
-        <img
-          src={"images/traslochi.jpg"}
-          className="mask mask-parallelogram object-fill w-full h-full"
-        ></img>
+    <div id="about" className="relative">
+      <div className="absolute lg:left-96 p-10 hidden lg:block -z-10">
+        <Image
+          src={traslochi}
+          alt="traslochi-logo"
+          className="mask mask-parallelogram-2"
+        ></Image>
       </div>
-      <div className="flex w-full lg:gap-20 justify-center items-center h-screen">
-        <div className="w-96">
-          <h1 className="text-5xl font-bold mt-32 text-center">Chi siamo?</h1>
+      <div className="flex lg:flex-row flex-col w-full justify-center items-center max-w-5xl mx-auto my-20 lg:gap-20 ">
+        <div className="w-96 lg:sticky lg:top-40">
+          <h1 className="text-5xl font-bold text-center">Chi siamo?</h1>
           <div className="w-full h-10 bg-secondary mt-5"></div>
         </div>
         <div className="w-full h-full flex justify-center items-center">
