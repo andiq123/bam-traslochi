@@ -5,7 +5,7 @@ import { Task } from "../types/task";
 const requests = {
   get: async <T,>(url: string): Promise<T | ErrorResponseModel> => {
     try {
-      const baseUrl = process.env.URL;
+      const baseUrl = process.env.URL + "/api/";
       const response = await fetch(encodeURI(baseUrl + url));
 
       if (response.status !== 200) {

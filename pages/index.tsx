@@ -1,5 +1,3 @@
-import { faArrowCircleDown } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Head from "next/head";
 import { useState } from "react";
 import agent from "../agent/agent";
