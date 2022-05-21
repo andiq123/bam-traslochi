@@ -1,12 +1,12 @@
 import Head from "next/head";
 import { useState } from "react";
-import agent from "../agent/agent";
 import About from "../components/about";
 import Contact from "../components/contact/contact";
 import Footer from "../components/footer";
 import Initial from "../components/initial";
 import Modal from "../components/modal";
 import Tasks from "../components/tasks";
+import { getContact, getTasks } from "../fakeApi/data";
 import { ContactDetails } from "../types/contactDetails";
 import { Task } from "../types/task";
 
@@ -25,6 +25,7 @@ const Home = ({ tasks, contactDetails }: Props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Modal
+        phoneNumber={contactDetails.Telefono}
         isOpen={isOpenedModal}
         closeModal={() => setIsOpenedModal(false)}
       />
@@ -44,8 +45,8 @@ const Home = ({ tasks, contactDetails }: Props) => {
 };
 
 export async function getStaticProps() {
-  const tasks = await agent.tasks;
-  const contactDetails = await agent.contact;
+  const tasks = getTasks();
+  const contactDetails = getContact();
 
   return {
     props: { tasks, contactDetails },

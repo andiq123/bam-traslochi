@@ -4,9 +4,10 @@ import { useMemo, useState } from "react";
 interface Props {
   isOpen: boolean;
   closeModal: () => void;
+  phoneNumber: string;
 }
 
-const Modal = ({ isOpen, closeModal }: Props) => {
+const Modal = ({ isOpen, closeModal, phoneNumber }: Props) => {
   const [name, setName] = useState("");
   const message = useMemo(
     () =>
@@ -16,10 +17,14 @@ const Modal = ({ isOpen, closeModal }: Props) => {
     [name]
   );
 
-  const getLinkWhastapp = (number: string) => {
+  const getLinkWhastapp = () => {
     if (!name) return;
+
     const txt =
-      "https://api.whatsapp.com/send?phone=" + number + "&text=%20" + message;
+      "https://api.whatsapp.com/send?phone=" +
+      phoneNumber +
+      "&text=%20" +
+      message;
 
     return txt;
   };
@@ -57,7 +62,7 @@ const Modal = ({ isOpen, closeModal }: Props) => {
             <div className="flex flex-wrap w-full">
               <button className="w-1/2 rounded-md">
                 <a
-                  href={getLinkWhastapp("+40726807300")}
+                  href={getLinkWhastapp()}
                   className="btn btn-ghost normal-case text-2xl font-bold flex gap-2"
                 >
                   {/* <FontAwesomeIcon icon={} className="text-3xl rounded-lg" /> */}
