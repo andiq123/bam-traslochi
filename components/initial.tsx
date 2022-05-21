@@ -9,12 +9,12 @@ interface Props {
 
 const Initial = ({ openModal }: Props) => {
   return (
-    <div id="initial" className="relative flex flex-col min-h-screen top-20">
-      <div className="absolute">
+    <div id="initial" className="relative flex flex-col mb-32">
+      <div className="absolute mt-20">
         <Image src={traslochiHome} alt="Logo" />
       </div>
 
-      <div className="flex flex-col justify-center items-center bg-secondary lg:mt-64 mt-32 p-5 bg-opacity-50 backdrop-blur-md">
+      <div className="flex flex-col justify-center items-center bg-secondary lg:mt-64 mt-52 p-5 bg-opacity-50 backdrop-blur-md">
         <div className="flex items-center">
           <div className="lg:mr-10 mr-5">
             <Image src={cargo} width={200} height={200} alt="anotherLoggo" />

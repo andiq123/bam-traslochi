@@ -19,18 +19,18 @@ const Tasks = ({ tasks }: Props) => {
           {tasks.map((task) => (
             <div
               key={task.id}
-              className="flex w-full items-center p-2 hover:bg-secondary-focus hover:rounded-lg transition-all duration-200 hover:scale-105"
+              className="flex hover:bg-secondary-focus hover:rounded-lg transition-all duration-200 hover:scale-105 p-2"
             >
               <Image
                 src={task.imgUrl}
-                alt={task.title}
-                width={"200"}
-                height={"150"}
+                alt="Cover"
                 objectFit="cover"
-                className=" overflow-hidden rounded-3xl lg:w-60 w-full"
+                width={100}
+                height={100}
+                className="flex-1 rounded-xl"
               />
 
-              <h1 className="text-3xl font-bold ml-20 text-secondary-content">
+              <h1 className="lg:text-3xl text-xl flex-1 font-bold ml-20 text-secondary-content">
                 {task.title}
               </h1>
             </div>
@@ -42,3 +42,5 @@ const Tasks = ({ tasks }: Props) => {
 };
 
 export default Tasks;
+
+// flex w-full items-center p-2

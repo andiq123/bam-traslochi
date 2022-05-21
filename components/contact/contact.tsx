@@ -6,6 +6,7 @@ import {
   faLocationArrow,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { ContactDetails } from "../../types/contactDetails";
 import ContactField from "./contactField";
 
@@ -15,14 +16,20 @@ interface Props {
 }
 
 const Contact = ({ details, openModal }: Props) => {
+  const [isBigScreen, setIsBigScreen] = useState(false);
+  useEffect(() => {
+    const w = window.matchMedia("(min-width: 1920px)");
+    setIsBigScreen(w.matches);
+  });
+
   const { Azienda, CAP, Città, Contatto, Indirizzo, Telefono } = details;
   return (
-    <div id="contact" className="lg:mt-56">
-      <h1 className="text-center font-bold text-5xl max-w-6xl mx-auto pt-10 ">
+    <div id="contact" className="mb-5">
+      <h1 className="text-center font-bold text-5xl max-w-6xl mx-auto">
         Ci trovi qui!
       </h1>
 
-      <div className="flex lg:flex-row flex-col lg:max-w-6xl mx-auto gap-10 items-center justify-center my-10">
+      <div className="flex lg:flex-row flex-col lg:max-w-6xl mx-auto gap-10 items-center justify-center ">
         <div className="p-10 flex-shrink-0 w-full max-w-sm shadow-2xl rounded-2xl bg-base-100">
           <ContactField
             click={openModal}
