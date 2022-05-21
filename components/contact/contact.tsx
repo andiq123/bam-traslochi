@@ -11,9 +11,10 @@ import ContactField from "./contactField";
 
 interface Props {
   details: ContactDetails;
+  openModal: () => void;
 }
 
-const Contact = ({ details }: Props) => {
+const Contact = ({ details, openModal }: Props) => {
   const { Azienda, CAP, Città, Contatto, Indirizzo, Telefono } = details;
   return (
     <div id="contact">
@@ -24,6 +25,7 @@ const Contact = ({ details }: Props) => {
       <div className="flex lg:flex-row flex-col lg:max-w-6xl mx-auto gap-10 items-center justify-center my-10">
         <div className="p-10 flex-shrink-0 w-full max-w-sm shadow-2xl rounded-2xl bg-base-100">
           <ContactField
+            click={openModal}
             item={{ icon: faPhone, label: "Telefono", value: Telefono }}
             isClickable={true}
           />
