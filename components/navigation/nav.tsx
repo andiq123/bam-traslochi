@@ -24,7 +24,10 @@ const Nav = () => {
   return (
     <div className="navbar bg-base-100 bg-opacity-50 backdrop-blur-md fixed z-20">
       <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-2xl font-bold flex gap-2">
+        <a
+          className="btn btn-ghost normal-case text-2xl font-bold flex gap-2"
+          href="#initial"
+        >
           <Image
             src={cargo}
             className="max-w-sm rounded-lg shadow-2xl"
