@@ -71,7 +71,10 @@ const Modal = ({ isOpen, closeModal, phoneNumber }: Props) => {
             </div>
           )}
           <div className="modal-action justify-center w-full">
-            <button onClick={() => closeModal()} className="btn w-full">
+            <button
+              onClick={() => closeModal()}
+              className="btn btn-primary w-full"
+            >
               Chiudi
             </button>
           </div>
