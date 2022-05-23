@@ -43,9 +43,11 @@ const Modal = ({ isOpen, closeModal, phoneNumber }: Props) => {
       <div className="modal">
         <div className="modal-box justify-center flex flex-col gap-5 items-center">
           <h3 className="font-bold text-lg">Conttami su</h3>
-          <label className="input-group w-full">
+          <p className="font-semibold italic">{phoneNumber}</p>
+          <label htmlFor="name" className="input-group w-full">
             <span>Nome</span>
             <input
+              name="name"
               type="text"
               placeholder="Inserisci il tuo nome"
               className="input input-bordered w-full"

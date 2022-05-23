@@ -33,6 +33,7 @@ const Nav = () => {
             className="max-w-sm rounded-lg shadow-2xl"
             width={50}
             height={50}
+            alt="cargo-logo"
           />
           Bam Traslochi
         </a>
