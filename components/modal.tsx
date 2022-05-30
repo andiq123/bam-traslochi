@@ -1,4 +1,7 @@
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { useMemo, useState } from "react";
+import { toast } from "react-toastify";
+import ContactField from "./contact/contactField";
 
 interface Props {
   isOpen: boolean;
@@ -32,6 +35,15 @@ const Modal = ({ isOpen, closeModal, phoneNumber }: Props) => {
     return s.charAt(0).toUpperCase() + s.slice(1);
   };
 
+  const copyPhone = async () => {
+    if ("clipboard" in navigator) {
+      await navigator.clipboard.writeText(phoneNumber);
+    } else {
+      document.execCommand("copy", true, phoneNumber);
+    }
+
+    toast("il numero è stato copiato negli appunti");
+  };
   return (
     <div>
       <input
@@ -43,7 +55,11 @@ const Modal = ({ isOpen, closeModal, phoneNumber }: Props) => {
       <div className="modal">
         <div className="modal-box justify-center flex flex-col gap-5 items-center">
           <h3 className="font-bold text-lg">Conttami su</h3>
-          <p className="font-semibold italic">{phoneNumber}</p>
+          <ContactField
+            click={copyPhone}
+            item={{ icon: faPhone, label: "Telefono", value: phoneNumber }}
+            isClickable={true}
+          />
           <label htmlFor="name" className="input-group w-full">
             <span>Nome</span>
             <input

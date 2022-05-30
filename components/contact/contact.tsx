@@ -7,6 +7,7 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useMemo, useRef, useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
 import { ContactDetails } from "../../types/contactDetails";
 import ContactField from "./contactField";
 
@@ -21,8 +22,18 @@ const Contact = ({ details, openModal }: Props) => {
     const w = window.matchMedia("(min-width: 1920px)");
     setIsBigScreen(w.matches);
   });
+  const { Azienda, CAP, Città, Contatto, Indirizzo, Telefono, Email } = details;
 
-  const { Azienda, CAP, Città, Contatto, Indirizzo, Telefono } = details;
+  const copyEmail = async () => {
+    if ("clipboard" in navigator) {
+      await navigator.clipboard.writeText(Email);
+    } else {
+      document.execCommand("copy", true, Email);
+    }
+
+    toast("l'e-mail è stata copiata negli appunti");
+  };
+
   return (
     <div id="contact" className="mb-5">
       <h1 className="text-center font-bold text-5xl max-w-6xl mx-auto">
@@ -35,6 +46,11 @@ const Contact = ({ details, openModal }: Props) => {
             click={openModal}
             item={{ icon: faPhone, label: "Telefono", value: Telefono }}
             isClickable={true}
+          />
+          <ContactField
+            isClickable={true}
+            click={copyEmail}
+            item={{ icon: faAddressCard, label: "Email", value: Email }}
           />
           <ContactField
             item={{ icon: faAddressCard, label: "Contatto", value: Contatto }}

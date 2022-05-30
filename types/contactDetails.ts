@@ -1,5 +1,6 @@
 export type ContactDetails = {
   Azienda: string;
+  Email: string;
   Contatto: string;
   Indirizzo: string;
   Città: string;
