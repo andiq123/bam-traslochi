@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useState } from "react";
 import About from "../components/about";
 import Contact from "../components/contact/contact";
+import ExperienceBanner from "../components/experienceBanner";
 import Footer from "../components/footer";
 import Initial from "../components/initial";
 import Modal from "../components/modal";
@@ -45,6 +46,7 @@ const Home = ({ tasks, contactDetails }: Props) => {
       /> */}
 
       <Initial openModal={openModal} />
+      <ExperienceBanner />
       <Tasks tasks={tasks} />
       <About />
       <Contact details={contactDetails} openModal={openModal} />

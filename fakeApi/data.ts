@@ -37,18 +37,18 @@ export const getTasks = (): Task[] => {
     },
     {
       id: 4,
-      title: "Noleggio Camion Con Autista",
+      title: "Noleggio Camion con Autista",
       imgUrl: "/images/Noleggio-Camion.jpg",
     },
     {
       id: 5,
-      title: "Traslochi Nazionali E Internazionali",
-      imgUrl: "/images/traslochi-internazionali.jpg",
+      title: "Noleggio Scala con Operatore",
+      imgUrl: "/images/noleggio-scala.jpg",
     },
     {
       id: 6,
-      title: "Esperienza di 10 Anni",
-      imgUrl: "/images/traslochi-exp.jpg",
+      title: "Traslochi Nazionali E Internazionali",
+      imgUrl: "/images/traslochi-internazionali.jpg",
     },
   ];
   return tasks;

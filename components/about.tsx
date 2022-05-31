@@ -3,7 +3,7 @@ import traslochi from "../public/images/traslochi.jpg";
 
 const About = () => {
   return (
-    <div id="about" className="relative min-h-screen">
+    <div id="about" className="relative lg:min-h-screen">
       <div className="absolute lg:left-96 p-10 hidden lg:block -z-10">
         <Image
           src={traslochi}
@@ -12,7 +12,7 @@ const About = () => {
           objectFit="cover"
         ></Image>
       </div>
-      <div className="flex lg:flex-row flex-col w-full justify-center items-center max-w-5xl mx-auto mt-20 lg:gap-20 lg:sticky lg:top-28">
+      <div className="flex lg:flex-row flex-col w-full justify-center items-center max-w-5xl mx-auto mt-20 lg:gap-20 lg:sticky lg:top-28 lg:mb-0 mb-12">
         <div className="w-96 lg:sticky lg:top-40">
           <h1 className="text-5xl font-bold text-center">Chi siamo?</h1>
           <div className="w-full h-10 bg-secondary mt-5"></div>
