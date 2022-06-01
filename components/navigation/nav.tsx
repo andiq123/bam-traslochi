@@ -11,7 +11,7 @@ const navLinks = [
   },
   { title: "Servizi", href: "#servizi" },
   {
-    title: "Chi siamo",
+    title: "Perché noi",
     href: "#about",
   },
   {
