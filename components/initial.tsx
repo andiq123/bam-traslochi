@@ -28,7 +28,7 @@ const Initial = ({ openModal }: Props) => {
           className="btn btn-primary font-bold lg:text-2xl text-xl mt-10"
           onClick={openModal}
         >
-          Fa un preventivo rapido!
+          Richiedi Preventivo
         </button>
       </div>
     </div>

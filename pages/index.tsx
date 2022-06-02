@@ -27,6 +27,10 @@ const Home = ({ tasks, contactDetails }: Props) => {
   return (
     <div>
       <Head>
+        <link rel="dns-prefetch" href="//translate.google.com" />
+        <link rel="dns-prefetch" href="//s.w.org" />
+        <link rel="canonical" href="https://bamsrl-traslochi.it/" />
+        <link rel="shortlink" href="https://bamsrl-traslochi.it/" />
         <title>Trasloca in modo facile con noi! provaci!</title>
         <meta
           name="robots"
