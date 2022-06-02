@@ -2,12 +2,12 @@ const Footer = () => {
   return (
     <div className="w-full bg-secondary flex justify-center">
       <div className="flex">
-        <h3 className="font-bold text-xl p-10 hover:bg-secondary-focus transition-all duration-150 text-secondary-content">
-          @Copyright Andi 2022
-        </h3>
-        <h3 className="font-bold text-xl p-10 hover:bg-secondary-focus transition-all duration-150 text-secondary-content">
+        <h4 className="font-bold p-10 hover:bg-secondary-focus transition-all duration-150 text-secondary-content">
+          @Copyright Andrei 2022
+        </h4>
+        <h4 className="font-bold p-10 hover:bg-secondary-focus transition-all duration-150 text-secondary-content">
           BAM S.R.L
-        </h3>
+        </h4>
       </div>
     </div>
   );

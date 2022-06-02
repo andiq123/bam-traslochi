@@ -27,11 +27,27 @@ const Home = ({ tasks, contactDetails }: Props) => {
   return (
     <div>
       <Head>
-        <title>Bam Traslochi</title>
-        <meta name="description" content="Traslochi" />
-        <meta name="description" content="BAM traslochi" />
-        <meta name="description" content="Traslochi Verona" />
-        <meta name="description" content="Traslochi Italia" />
+        <title>Trasloca in modo facile con noi! provaci!</title>
+        <meta
+          name="robots"
+          content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+        <meta
+          name="description"
+          content="Traslochi Italia, Trasloco in modo facile!"
+        />
+        <meta property="article:tag" content="parco mezzi" />
+        <meta property="article:tag" content="Traslochi" />
+        <meta property="article:tag" content="BAM SRL" />
+        <meta property="article:tag" content="BAM Traslochi" />
+        <meta
+          property="article:published_time"
+          content="2022-01-01T14:27:53+00:00"
+        />
+        <meta
+          property="article:modified_time"
+          content="2022-06-01T13:51:24+00:00"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Modal

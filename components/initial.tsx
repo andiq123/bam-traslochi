@@ -21,9 +21,9 @@ const Initial = ({ openModal }: Props) => {
           </div>
           <h1 className="text-5xl font-bold">BAM Traslochi</h1>
         </div>
-        <p className="font-semibold lg:text-4xl text-2xl">
+        <h3 className="font-semibold lg:text-4xl text-2xl">
           Trasloca in modo facile!
-        </p>
+        </h3>
         <button
           className="btn btn-primary font-bold lg:text-2xl text-xl mt-10"
           onClick={openModal}
