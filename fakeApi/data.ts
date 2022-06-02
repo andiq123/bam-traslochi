@@ -17,17 +17,17 @@ export const getTasks = (): Task[] => {
   const tasks = [
     {
       id: 0,
-      title: "Traslochi E Montaggio Mobili",
+      title: "Traslochi e Montaggio Mobili",
       imgUrl: "/images/traslochi-e-montaggio.jpg",
     },
     {
       id: 1,
-      title: "Modifiche Mobili Se Necessario",
+      title: "Modifiche Mobili se Necessario",
       imgUrl: "/images/modifiche.jpg",
     },
     {
       id: 2,
-      title: "Montaggi Su Misura",
+      title: "Montaggi su Misura",
       imgUrl: "/images/misura.jpg",
     },
     {

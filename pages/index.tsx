@@ -40,6 +40,19 @@ const Home = ({ tasks, contactDetails }: Props) => {
           name="description"
           content="Traslochi Italia, Trasloco in modo facile!"
         />
+        <meta name="description" content="BAM" />
+        <meta name="description" content="BAM Traslochi" />
+        <meta name="description" content="Traslochi E Montaggio Mobili" />
+        <meta name="description" content="Montaggi Su Misura" />
+        <meta name="description" content="Noleggio Camion con Autista" />
+        <meta name="description" content="Noleggio Scala con Operatore" />
+        <meta name="description" content="Montaggi su Misura" />
+        <meta
+          name="description"
+          content="Traslochi Nazionali E Internazionali"
+        />
+        <meta name="description" content="Villafranca di Verona" />
+        <meta name="description" content="Verona" />
         <meta property="article:tag" content="parco mezzi" />
         <meta property="article:tag" content="Traslochi" />
         <meta property="article:tag" content="BAM SRL" />

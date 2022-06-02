@@ -1,4 +1,5 @@
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faMessage, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useMemo, useState } from "react";
 import { toast } from "react-toastify";
 import ContactField from "./contact/contactField";
@@ -22,13 +23,19 @@ const Modal = ({ isOpen, closeModal, phoneNumber }: Props) => {
   const getLinkWhastapp = () => {
     if (!name) return;
 
-    const txt =
+    const url =
       "https://api.whatsapp.com/send?phone=" +
       phoneNumber +
       "&text=%20" +
       message;
 
-    return txt;
+    return encodeURI(url);
+  };
+
+  const getLinkTelegram = () => {
+    if (!name) return;
+    const url = `https://telegram.me/andreabam`;
+    return encodeURI(url);
   };
 
   const capitalize = (s: string) => {
@@ -40,6 +47,11 @@ const Modal = ({ isOpen, closeModal, phoneNumber }: Props) => {
       await navigator.clipboard.writeText(phoneNumber);
     } else {
       document.execCommand("copy", true, phoneNumber);
+    }
+
+    //check if client is a mobile
+    if (window.innerWidth < 768) {
+      window.open("tel:" + phoneNumber);
     }
 
     toast("il numero è stato copiato negli appunti");
@@ -76,14 +88,29 @@ const Modal = ({ isOpen, closeModal, phoneNumber }: Props) => {
             </p>
           )}
           {name && (
-            <div className="flex flex-wrap w-full justify-center">
-              <button className="w-1/2 rounded-md btn bg-green-700 text-white">
+            <div className="flex lg:flex-row flex-col justify-center items-center gap-5 flex-wrap w-full">
+              <button className="rounded-md btn bg-green-600 text-white w-full lg:w-fit">
                 <a
                   href={getLinkWhastapp()}
-                  className="btn btn-ghost normal-case text-2xl font-bold flex gap-2"
+                  className="btn btn-ghost normal-case text-xl font-bold flex gap-2"
                 >
-                  {/* <FontAwesomeIcon icon={} className="text-3xl rounded-lg" /> */}
+                  <FontAwesomeIcon
+                    icon={faMessage}
+                    className="text-3xl rounded-lg"
+                  />
                   Whatsapp
+                </a>
+              </button>
+              <button className="rounded-md btn bg-blue-600 text-white w-full lg:w-fit">
+                <a
+                  href={getLinkTelegram()}
+                  className="btn btn-ghost normal-case text-xl font-bold flex gap-5"
+                >
+                  <FontAwesomeIcon
+                    icon={faMessage}
+                    className="text-3xl rounded-lg"
+                  />
+                  Telegram
                 </a>
               </button>
             </div>

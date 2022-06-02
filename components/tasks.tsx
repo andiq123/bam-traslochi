@@ -7,7 +7,7 @@ interface Props {
 
 const Tasks = ({ tasks }: Props) => {
   return (
-    <div id="servizi" className="bg-secondary flex justify-center">
+    <article id="servizi" className="bg-secondary flex justify-center">
       <div className="flex lg:flex-row flex-col gap-10 max-w-6xl justify-center lg:items-start items-center">
         <div className="h-fit lg:sticky lg:top-32">
           <h1 className="text-5xl font-bold whitespace-nowrap">
@@ -37,7 +37,7 @@ const Tasks = ({ tasks }: Props) => {
           ))}
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 

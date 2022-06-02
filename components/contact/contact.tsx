@@ -17,11 +17,6 @@ interface Props {
 }
 
 const Contact = ({ details, openModal }: Props) => {
-  const [isBigScreen, setIsBigScreen] = useState(false);
-  useEffect(() => {
-    const w = window.matchMedia("(min-width: 1920px)");
-    setIsBigScreen(w.matches);
-  });
   const { Azienda, CAP, Città, Contatto, Indirizzo, Telefono, Email } = details;
 
   const copyEmail = async () => {
