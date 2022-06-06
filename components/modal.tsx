@@ -25,7 +25,7 @@ const Modal = ({ isOpen, closeModal, phoneNumber }: Props) => {
     const url =
       "https://api.whatsapp.com/send?phone=" +
       phoneNumber +
-      "&text=%20" +
+      "&text=" +
       message;
 
     return encodeURI(url);
