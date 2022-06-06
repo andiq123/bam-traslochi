@@ -14,9 +14,8 @@ const Modal = ({ isOpen, closeModal, phoneNumber }: Props) => {
   const [name, setName] = useState("");
   const message = useMemo(
     () =>
-      encodeURI(
-        `Ciao, mi chiamo ${name} e ti conttato per un previsto, arrivo dal tuo sito.`
-      ),
+      `Ciao, mi chiamo ${name} e ti conttato per un previsto, arrivo dal tuo sito.`
+    ,
     [name]
   );
 
