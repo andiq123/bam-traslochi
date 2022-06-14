@@ -40,6 +40,7 @@ const Home = ({ tasks, contactDetails }: Props) => {
           name="description"
           content="Traslochi Italia, Trasloco in modo facile!"
         />
+        <meta name="google-site-verification" content="pVZbKXV3NKcjq3vizj0OcVBNTtPaJKOsBg42uw0DSks" />
         <meta name="description" content="BAM" />
         <meta name="description" content="BAM Traslochi" />
         <meta name="description" content="Traslochi E Montaggio Mobili" />
