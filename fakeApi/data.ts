@@ -4,7 +4,7 @@ import { Task } from "../types/task";
 export const getContact = (): ContactDetails => {
   return {
     Azienda: "Bam S.R.L.",
-    Email: "bam.traslochi@gmail.com",
+    Email: "bamsrl.info@gmail.com",
     Contatto: "Andrei ",
     Indirizzo: "Via Caluri, 58",
     Città: "Villafranca di Verona",
