@@ -31,7 +31,7 @@ const Home = ({ tasks, contactDetails }: Props) => {
         <link rel="dns-prefetch" href="//s.w.org" />
         <link rel="canonical" href="https://bamsrl-traslochi.it/" />
         <link rel="shortlink" href="https://bamsrl-traslochi.it/" />
-        <title>Trasloca in modo facile con noi! provaci!</title>
+        <title>BAM SRL</title>
         <meta
           name="robots"
           content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
@@ -41,19 +41,7 @@ const Home = ({ tasks, contactDetails }: Props) => {
           content="Traslochi Italia, Trasloco in modo facile!"
         />
         <meta name="google-site-verification" content="pVZbKXV3NKcjq3vizj0OcVBNTtPaJKOsBg42uw0DSks" />
-        <meta name="description" content="BAM" />
-        <meta name="description" content="BAM Traslochi" />
-        <meta name="description" content="Traslochi E Montaggio Mobili" />
-        <meta name="description" content="Montaggi Su Misura" />
-        <meta name="description" content="Noleggio Camion con Autista" />
-        <meta name="description" content="Noleggio Scala con Operatore" />
-        <meta name="description" content="Montaggi su Misura" />
-        <meta
-          name="description"
-          content="Traslochi Nazionali E Internazionali"
-        />
-        <meta name="description" content="Villafranca di Verona" />
-        <meta name="description" content="Verona" />
+        <meta name="description" content="Azienda specializzata nei traslochi di privati e aziende nazionali e internazionali da più di 10 anni soddisfando ogni esigenza dei nostri clienti." />
         <meta property="article:tag" content="parco mezzi" />
         <meta property="article:tag" content="Traslochi" />
         <meta property="article:tag" content="BAM SRL" />
