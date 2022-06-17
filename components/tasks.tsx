@@ -19,7 +19,7 @@ const Tasks = ({ tasks }: Props) => {
           {tasks.map((task) => (
             <div
               key={task.id}
-              className="flex hover:bg-secondary-focus hover:rounded-lg transition-all duration-200 hover:scale-105 p-2"
+              className="flex hover:bg-secondary-focus bg-opacity-4 rounded-lg transition-all duration-200 hover:scale-105 p-2"
             >
               <Image
                 src={task.imgUrl}
