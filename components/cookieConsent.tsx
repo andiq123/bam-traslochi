@@ -32,7 +32,7 @@ const CookieConsent = () => {
           <div className="lg:w-1/2 w-full bg-white rounded-xl bg-opacity-60 backdrop-blur-lg">
             <div className="flex flex-col justify-center items-center m-5 gap-5">
               <p className="text-xl font-semibold">
-                Noi usiamo i cookies per un'esperienza migliore per te!
+                Noi usiamo i cookies per un&apos;esperienza migliore per te!
               </p>
               <div className="btn-group">
                 <button
