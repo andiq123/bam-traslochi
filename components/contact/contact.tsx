@@ -6,10 +6,12 @@ import {
   faLocationArrow,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
-import { useEffect, useMemo, useRef, useState } from "react";
-import { toast, ToastContainer } from "react-toastify";
+import { useEffect, useState } from "react";
+import { toast } from "react-toastify";
 import { ContactDetails } from "../../types/contactDetails";
 import ContactField from "./contactField";
+import maps from "../../public/images/maps.png";
+import Image from "next/image";
 
 interface Props {
   details: ContactDetails;
@@ -17,6 +19,16 @@ interface Props {
 }
 
 const Contact = ({ details, openModal }: Props) => {
+  const [cookiesAccepted, setCookiesAccepted] = useState(false);
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    const accepted = localStorage.getItem("cookieConsent");
+    const isAccepted = accepted !== null && accepted === "accepted";
+    setCookiesAccepted(isAccepted);
+    setWidth(window.innerWidth);
+  }, []);
+
   const { Azienda, CAP, Città, Contatto, Indirizzo, Telefono, Email } = details;
 
   const copyEmail = async () => {
@@ -27,6 +39,11 @@ const Contact = ({ details, openModal }: Props) => {
     }
 
     toast("l'e-mail è stata copiata negli appunti");
+  };
+
+  const acceptCookies = () => {
+    localStorage.setItem("cookieConsent", "accepted");
+    window.location.reload();
   };
 
   return (
@@ -66,12 +83,29 @@ const Contact = ({ details, openModal }: Props) => {
           />
         </div>
 
-        <iframe
-          title="google-map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d700.5999307226109!2d10.876707329257476!3d45.3811069406694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781de1ec27989e9%3A0xa9e8f15d0e3c4058!2sVia%20Caluri%2C%2058%2C%2037069%20Caluri%20VR%2C%20Italy!5e0!3m2!1sen!2sro!4v1653049534165!5m2!1sen!2sro"
-          loading="lazy"
-          className="lg:w-full w-96 h-96 shadow-xl rounded-xl"
-        ></iframe>
+        {cookiesAccepted ? (
+          <iframe
+            title="google-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d700.5999307226109!2d10.876707329257476!3d45.3811069406694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781de1ec27989e9%3A0xa9e8f15d0e3c4058!2sVia%20Caluri%2C%2058%2C%2037069%20Caluri%20VR%2C%20Italy!5e0!3m2!1sen!2sro!4v1653049534165!5m2!1sen!2sro"
+            loading="lazy"
+            className="lg:w-full w-96 h-96 shadow-xl rounded-xl"
+          ></iframe>
+        ) : (
+          <div className="flex flex-col gap-2">
+            <p className="flex justify-center items-center m-2">
+              Se vuoi tocare il google maps, devi accetare i cookies
+              <button className="btn btn-primary ml-5" onClick={acceptCookies}>
+                Accettò i cookies
+              </button>
+            </p>
+            <Image
+              src={maps}
+              width={width}
+              height={800}
+              alt="google maps"
+            ></Image>
+          </div>
+        )}
       </div>
     </div>
   );

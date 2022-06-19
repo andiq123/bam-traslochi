@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useState } from "react";
 import About from "../components/about";
 import Contact from "../components/contact/contact";
+import CookieConsent from "../components/cookieConsent";
 import ExperienceBanner from "../components/experienceBanner";
 import Footer from "../components/footer";
 import Initial from "../components/initial";
@@ -40,8 +41,14 @@ const Home = ({ tasks, contactDetails }: Props) => {
           name="description"
           content="Traslochi Italia, Trasloco in modo facile!"
         />
-        <meta name="google-site-verification" content="pVZbKXV3NKcjq3vizj0OcVBNTtPaJKOsBg42uw0DSks" />
-        <meta name="description" content="Azienda specializzata nei traslochi di privati e aziende nazionali e internazionali da più di 10 anni soddisfando ogni esigenza dei nostri clienti." />
+        <meta
+          name="google-site-verification"
+          content="pVZbKXV3NKcjq3vizj0OcVBNTtPaJKOsBg42uw0DSks"
+        />
+        <meta
+          name="description"
+          content="Azienda specializzata nei traslochi di privati e aziende nazionali e internazionali da più di 10 anni soddisfando ogni esigenza dei nostri clienti."
+        />
         <meta property="article:tag" content="parco mezzi" />
         <meta property="article:tag" content="Traslochi" />
         <meta property="article:tag" content="BAM SRL" />
@@ -73,6 +80,7 @@ const Home = ({ tasks, contactDetails }: Props) => {
       <About />
       <Contact details={contactDetails} openModal={openModal} />
       <Footer />
+      <CookieConsent />
     </div>
   );
 };
