@@ -14,8 +14,7 @@ const Modal = ({ isOpen, closeModal, phoneNumber }: Props) => {
   const [name, setName] = useState("");
   const message = useMemo(
     () =>
-      `Ciao, mi chiamo ${name} e ti conttato per un preventivo, arrivo dal tuo sito.`
-    ,
+      `Ciao, mi chiamo ${name} e ti conttato per un preventivo, arrivo dal tuo sito.`,
     [name]
   );
 
@@ -23,10 +22,7 @@ const Modal = ({ isOpen, closeModal, phoneNumber }: Props) => {
     if (!name) return;
 
     const url =
-      "https://api.whatsapp.com/send?phone=" +
-      phoneNumber +
-      "&text=" +
-      message;
+      "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + message;
 
     return encodeURI(url);
   };

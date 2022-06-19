@@ -22,7 +22,7 @@ const ContactField = ({ item, isClickable, click }: Props) => {
           <p className="text-2xl">{item.value}</p>
         </div>
       ) : (
-        <div className={`flex items-center gap-5 align-middle`}>
+        <div className={`flex items-center gap-5 align-middle p-3`}>
           <FontAwesomeIcon icon={item.icon} className="w-5" />
           <p className="text-2xl">{item.value}</p>
         </div>
