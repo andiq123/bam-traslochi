@@ -21,12 +21,16 @@ interface Props {
 const Contact = ({ details, openModal }: Props) => {
   const [cookiesAccepted, setCookiesAccepted] = useState(false);
   const [width, setWidth] = useState(0);
+  const [height, setHeight] = useState(0);
 
   useEffect(() => {
     const accepted = localStorage.getItem("cookieConsent");
     const isAccepted = accepted !== null && accepted === "accepted";
     setCookiesAccepted(isAccepted);
     setWidth(window.innerWidth);
+    setHeight(
+      window.innerWidth > 800 ? window.innerHeight : window.innerHeight / 4
+    );
   }, []);
 
   const { Azienda, CAP, Città, Contatto, Indirizzo, Telefono, Email } = details;
@@ -101,7 +105,7 @@ const Contact = ({ details, openModal }: Props) => {
             <Image
               src={maps}
               width={width}
-              height={800}
+              height={height}
               alt="google maps"
             ></Image>
           </div>
