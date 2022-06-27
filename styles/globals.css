@@ -36,3 +36,21 @@ a {
     transform: translateY(0);
   }
 }
+
+.popUpSlow {
+  animation: popUpSlowAnim 1s ease-in-out forwards;
+}
+
+@keyframes popUpSlowAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-2%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

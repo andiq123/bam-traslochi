@@ -4,7 +4,7 @@ const ExperienceBanner = () => {
       <h1 className="text-3xl text-center font-bold">
         Esperienza di
         <span className="bg-secondary-focus p-3 rounded-xl text-white ml-3">
-          10 anni
+          {new Date().getFullYear() - 2012} anni
         </span>
       </h1>
     </div>

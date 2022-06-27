@@ -14,7 +14,7 @@ const Initial = ({ openModal }: Props) => {
         <Image src={traslochiHome} alt="Logo" />
       </div>
 
-      <div className="flex flex-col justify-center items-center bg-secondary lg:mt-64 mt-52 p-5 bg-opacity-50 backdrop-blur-md">
+      <div className="popUpSlow flex flex-col justify-center items-center bg-secondary lg:mt-64 mt-52 p-5 bg-opacity-50 backdrop-blur-md">
         <div className="flex items-center">
           <div className="lg:mr-10 mr-5">
             <Image src={cargo} width={200} height={200} alt="anotherLoggo" />
