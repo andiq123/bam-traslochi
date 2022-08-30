@@ -6,9 +6,9 @@ export const getContact = (): ContactDetails => {
     Azienda: "Bam S.R.L.",
     Email: "bamsrl.info@gmail.com",
     Contatto: "Andrei ",
-    Indirizzo: "Via Caluri, 58",
+    Indirizzo: "Via Chioda, 76",
     Città: "Villafranca di Verona",
-    CAP: "37069",
+    CAP: "37136",
     Telefono: "+393277786351",
   };
 };
