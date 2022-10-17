@@ -26,7 +26,7 @@ const Nav = () => {
       <div className="flex-1">
         <a
           className="btn btn-ghost normal-case text-2xl font-bold flex gap-2"
-          href="#initial"
+          href="/#initial"
         >
           <Image
             src={cargo}

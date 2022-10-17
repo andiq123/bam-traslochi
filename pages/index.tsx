@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import About from "../components/about";
 import Contact from "../components/contact/contact";
 import CookieConsent from "../components/cookieConsent";
@@ -22,9 +22,11 @@ const Home = ({ tasks, contactDetails }: Props) => {
   const openModal = () => {
     setIsOpenedModal(true);
   };
+
   const closeModal = () => {
     setIsOpenedModal(false);
   };
+
   return (
     <div>
       <Head>
@@ -63,16 +65,12 @@ const Home = ({ tasks, contactDetails }: Props) => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <Modal
         phoneNumber={contactDetails.Telefono}
         isOpen={isOpenedModal}
         closeModal={closeModal}
       />
-
-      {/* <FontAwesomeIcon
-        icon={faArrowCircleDown}
-        className="w-8 h-fit mt-auto animate-ping z-10 absolute pointer-events-none right-40 bottom-10"
-      /> */}
 
       <Initial openModal={openModal} />
       <ExperienceBanner />

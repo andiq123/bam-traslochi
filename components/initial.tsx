@@ -10,7 +10,7 @@ interface Props {
 const Initial = ({ openModal }: Props) => {
   return (
     <div id="initial" className="relative flex flex-col mt-10">
-      <div className="absolute mt-6">
+      <div className="absolute">
         <Image src={traslochiHome} alt="Logo" />
       </div>
 
