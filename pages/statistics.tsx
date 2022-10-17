@@ -1,6 +1,5 @@
-import { signOut } from "firebase/auth";
 import { useEffect, useState } from "react";
-import { authStateChanged, signInAsync, signOutAsync } from "../lib/api/auth";
+import { authStateChanged, signInAsync } from "../lib/api/auth";
 
 import {
   getAllDates,
@@ -115,6 +114,7 @@ const Statistics = ({ visitorNumber }: Props) => {
                 "Today"
               )}
               <span className="countdown font-mono text-6xl mx-2">
+                // @ts-ignore
                 <span style={{ "--value": visitorsNumber }}></span>
               </span>
               {visitorsNumber === 1 ? "person" : "persons"} have visited your
