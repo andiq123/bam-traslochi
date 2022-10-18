@@ -19,7 +19,6 @@ const dbInstance = collection(database, tableName);
 const getReportByDate = async (date: string): Promise<Report> => {
   const todayReport = await getDoc(doc(dbInstance, date));
   if (!todayReport.exists()) {
-    console.log("doesnt exist");
     return { visitors: [{ idHardware: "", timesVisited: 1 }] } as Report;
   }
   const report = todayReport.data() as Report;
@@ -110,5 +109,6 @@ export const getTodayNumberOfVisitorsAPI = (): Promise<number> =>
 
 export const getAllDatesTables = async (): Promise<string[]> => {
   const dates = await getDocs(dbInstance);
+  console.log(dates);
   return dates.docs.map((d) => d.id);
 };

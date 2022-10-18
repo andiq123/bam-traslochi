@@ -35,15 +35,18 @@ const Statistics = ({ visitorNumber }: Props) => {
 
         setIsLoading(false);
       });
+
       return;
     }
+
     getAllDates().then((data) => {
       setDateList(data);
     });
-  }, []);
+  }, [isLoggedIn]);
 
   useEffect(() => {
     if (!isLoggedIn) return;
+
     if (selectedDate === getTodayDate()) {
       listenForTodayChanges((numberOfVisitors) => {
         setVisitorsNumber(numberOfVisitors);
@@ -114,8 +117,12 @@ const Statistics = ({ visitorNumber }: Props) => {
                 "Today"
               )}
               <span className="countdown font-mono text-6xl mx-2">
-                // @ts-ignore
-                <span style={{ "--value": visitorsNumber }}></span>
+                <span
+                  style={
+                    // @ts-ignore
+                    { "--value": visitorsNumber }
+                  }
+                ></span>
               </span>
               {visitorsNumber === 1 ? "person" : "persons"} have visited your
               website
