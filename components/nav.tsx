@@ -24,7 +24,7 @@ const Nav = () => {
   return (
     <div className="navbar bg-base-100 bg-opacity-50 backdrop-blur-md fixed z-20">
       <div className="flex-1">
-        <a
+        <Link
           className="btn btn-ghost normal-case text-2xl font-bold flex gap-2"
           href="/#initial"
         >
@@ -36,7 +36,7 @@ const Nav = () => {
             alt="cargo-logo"
           />
           Bam Traslochi
-        </a>
+        </Link>
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal p-0 lg:flex hidden gap-2">
