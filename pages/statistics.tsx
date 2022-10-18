@@ -134,7 +134,7 @@ const Statistics = ({ visitorNumber }: Props) => {
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const visitorNumber = await getVisitorForToday();
 
   return {
