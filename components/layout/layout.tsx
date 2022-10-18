@@ -1,4 +1,4 @@
-import Nav from "../navigation/nav";
+import Nav from "../nav";
 
 interface Props {
   children: React.ReactNode;
