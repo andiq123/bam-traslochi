@@ -1,5 +1,6 @@
+import Head from "next/head";
 import { useEffect, useState } from "react";
-import { authStateChanged, signInAsync } from "../lib/api/auth";
+import { authStateChanged, signInAsync, signOutAsync } from "../lib/api/auth";
 
 import {
   getAllDates,
@@ -15,13 +16,26 @@ interface Props {
 
 const Statistics = ({ visitorNumber }: Props) => {
   const [isLoading, setIsLoading] = useState(true);
+  const [isSigninLoading, setIsSigninLoading] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
   const submitLogin = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    setIsSigninLoading(true);
+
     await signInAsync(username, password);
+
+    setIsSigninLoading(false);
+
+    setUsername("");
+    setPassword("");
+  };
+
+  const signOut = async () => {
+    await signOutAsync();
   };
 
   const [visitorsNumber, setVisitorsNumber] = useState(visitorNumber);
@@ -65,6 +79,9 @@ const Statistics = ({ visitorNumber }: Props) => {
 
   return (
     <div className="flex w-full h-72 items-center justify-center">
+      <Head>
+        <title>Statistics</title>
+      </Head>
       {isLoading ? (
         <progress className="progress w-56"></progress>
       ) : !isLoggedIn ? (
@@ -87,7 +104,7 @@ const Statistics = ({ visitorNumber }: Props) => {
               <div className="card-actions justify-end">
                 <button
                   type="submit"
-                  className="btn btn-primary"
+                  className={`btn btn-primary ${isSigninLoading && "loading"}`}
                   disabled={!username && !password}
                 >
                   Sign in!
@@ -127,6 +144,9 @@ const Statistics = ({ visitorNumber }: Props) => {
               {visitorsNumber === 1 ? "person" : "persons"} have visited your
               website
             </p>
+            <button className="btn btn-primary" onClick={signOut}>
+              Sign out
+            </button>
           </div>
         </div>
       )}

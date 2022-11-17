@@ -17,9 +17,13 @@ export const generateHardwareID = async () => {
 
 export const getTodayDate = (): string => {
   const today = new Date();
-  const date =
-    today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
 
-  const dateTime = date;
-  return dateTime;
+  const date =
+    (today.getDay() < 10 ? "0" + today.getDay() : today.getDay()) +
+    "-" +
+    (today.getMonth() + 1) +
+    "-" +
+    today.getFullYear();
+
+  return date;
 };
