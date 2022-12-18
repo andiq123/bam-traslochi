@@ -86,14 +86,29 @@ const Contact = ({ details, openModal }: Props) => {
         </div>
 
         {cookiesAccepted ? (
-          <iframe
-            title="google-map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.8490052076086!2d10.954674615462695!3d45.41238434492051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781e02c53e35809%3A0x3fada06f0fae8fb1!2sVia%20Chioda%2C%2076%2C%2037136%20Verona%20VR%2C%20Italia!5e0!3m2!1sro!2sro!4v1661874848092!5m2!1sro!2sro"
-            loading="lazy"
-            className="lg:w-full w-96 h-96 shadow-xl rounded-xl"
-          ></iframe>
+          <div className="flex flex-col w-full gap-10">
+            {" "}
+            <button
+              className="btn btn-primary font-bold lg:text-2xl text-xl mt-10 "
+              onClick={openModal}
+            >
+              Richiedi Preventivo
+            </button>
+            <iframe
+              title="google-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.8490052076086!2d10.954674615462695!3d45.41238434492051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781e02c53e35809%3A0x3fada06f0fae8fb1!2sVia%20Chioda%2C%2076%2C%2037136%20Verona%20VR%2C%20Italia!5e0!3m2!1sro!2sro!4v1661874848092!5m2!1sro!2sro"
+              loading="lazy"
+              className="lg:w-full w-96 h-96 shadow-xl rounded-xl"
+            ></iframe>
+          </div>
         ) : (
           <div className="flex flex-col gap-2">
+            <button
+              className="btn btn-primary font-bold lg:text-2xl text-xl mt-10 "
+              onClick={openModal}
+            >
+              Richiedi Preventivo
+            </button>
             <p className="flex justify-center items-center m-2">
               Se vuoi tocare il google maps, devi accetare i cookies
               <button className="btn btn-primary ml-5" onClick={acceptCookies}>

@@ -12,6 +12,9 @@ config.autoAddCss = false;
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     try {
+      //if development mode, don't insert visitor
+      if (process.env.NODE_ENV === "development") return;
+
       insertVisitor();
     } catch (error) {}
   }, []);
