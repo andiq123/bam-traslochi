@@ -109,6 +109,7 @@ export const getTodayNumberOfVisitorsAPI = (): Promise<number> =>
 
 export const getAllDatesTables = async (): Promise<string[]> => {
   const dates = await getDocs(dbInstance);
+
   const ids = dates.docs
     .map((d) => d.id)
     .sort((a, b) => new Date(b).getTime() - new Date(a).getTime());

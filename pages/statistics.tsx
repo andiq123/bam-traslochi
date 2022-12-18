@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
+import { Login } from "../components/login";
 import { authStateChanged, signInAsync, signOutAsync } from "../lib/api/auth";
 
 import {
@@ -16,31 +17,15 @@ interface Props {
 
 const Statistics = ({ visitorNumber }: Props) => {
   const [isLoading, setIsLoading] = useState(true);
-  const [isSigninLoading, setIsSigninLoading] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-
-  const submitLogin = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    setIsSigninLoading(true);
-
-    await signInAsync(username, password);
-
-    setIsSigninLoading(false);
-
-    setUsername("");
-    setPassword("");
-  };
-
-  const signOut = async () => {
-    await signOutAsync();
-  };
-
   const [visitorsNumber, setVisitorsNumber] = useState(visitorNumber);
   const [dateList, setDateList] = useState<string[]>([]);
   const [selectedDate, setSelectedDate] = useState<string>(getTodayDate());
+
+  //login section
+  const signOut = async () => {
+    await signOutAsync();
+  };
 
   useEffect(() => {
     if (!isLoggedIn) {
@@ -85,34 +70,7 @@ const Statistics = ({ visitorNumber }: Props) => {
       {isLoading ? (
         <progress className="progress w-56"></progress>
       ) : !isLoggedIn ? (
-        <div className="card w-96 bg-base-100 shadow-xl">
-          <div className="card-body">
-            <form className="gap-2 flex flex-col" onSubmit={submitLogin}>
-              <input
-                type="email"
-                placeholder="Username..."
-                className="input input-bordered input-accent w-full max-w-xs"
-                onInput={(e: any) => setUsername(e.target.value)}
-              />
-              <input
-                type="password"
-                placeholder="Password..."
-                className="input input-bordered input-accent w-full max-w-xs"
-                onInput={(e: any) => setPassword(e.target.value)}
-              />
-
-              <div className="card-actions justify-end">
-                <button
-                  type="submit"
-                  className={`btn btn-primary ${isSigninLoading && "loading"}`}
-                  disabled={!username && !password}
-                >
-                  Sign in!
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
+        <Login />
       ) : (
         <div className="card w-fit bg-base-100 shadow-xl">
           <div className="card-body items-center text-center">

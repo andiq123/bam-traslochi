@@ -10,7 +10,7 @@ import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import { ContactDetails } from "../../types/contactDetails";
 import ContactField from "./contactField";
-import maps from "../../public/images/maps.png";
+import maps from "../../public/images/maps1.png";
 import Image from "next/image";
 
 interface Props {
@@ -28,9 +28,7 @@ const Contact = ({ details, openModal }: Props) => {
     const isAccepted = accepted !== null && accepted === "accepted";
     setCookiesAccepted(isAccepted);
     setWidth(window.innerWidth);
-    setHeight(
-      window.innerWidth > 800 ? window.innerHeight : window.innerHeight / 4
-    );
+    setHeight(window.innerHeight);
   }, []);
 
   const { Azienda, CAP, Città, Contatto, Indirizzo, Telefono, Email } = details;

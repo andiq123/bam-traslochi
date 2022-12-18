@@ -1,18 +1,9 @@
-export const generateHardwareID = async () => {
-  const { hardwareConcurrency, userAgent, platform, appVersion } = navigator;
-  //compute hash
-  const hash = await crypto.subtle.digest(
-    "SHA-256",
-    new TextEncoder().encode(
-      `${userAgent}${platform}${appVersion}${hardwareConcurrency}`
-    )
-  );
-  //convert to hex
-  const hex = Array.from(new Uint8Array(hash))
-    .map((b) => b.toString(16).padStart(2, "0"))
-    .join("");
+import { load } from "@fingerprintjs/fingerprintjs";
 
-  return hex;
+export const generateHardwareID = async () => {
+  const resources = await load();
+  const data = await resources.get();
+  return data.visitorId;
 };
 
 export const getTodayDate = (): string => {
@@ -20,7 +11,7 @@ export const getTodayDate = (): string => {
 
   const day = today.getDate() < 10 ? "0" + today.getDate() : today.getDate();
 
-  const date = day + "-" + (today.getMonth() + 1) + "-" + today.getFullYear();
+  const date = today.getMonth() + 1 + "-" + +day + "-" + today.getFullYear();
 
   return date;
 };
