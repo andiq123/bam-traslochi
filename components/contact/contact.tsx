@@ -28,7 +28,9 @@ const Contact = ({ details, openModal }: Props) => {
     const isAccepted = accepted !== null && accepted === "accepted";
     setCookiesAccepted(isAccepted);
     setWidth(window.innerWidth);
-    setHeight(window.innerHeight);
+    setHeight(
+      window.innerHeight < 700 ? window.innerHeight : window.innerHeight
+    );
   }, []);
 
   const { Azienda, CAP, Città, Contatto, Indirizzo, Telefono, Email } = details;
@@ -49,7 +51,7 @@ const Contact = ({ details, openModal }: Props) => {
   };
 
   return (
-    <div id="contact" className="mb-5">
+    <section id="contact" className="mb-5">
       <h1 className="text-center font-bold text-5xl max-w-6xl mx-auto">
         Ci trovi qui!
       </h1>
@@ -124,7 +126,7 @@ const Contact = ({ details, openModal }: Props) => {
           </div>
         )}
       </div>
-    </div>
+    </section>
   );
 };
 

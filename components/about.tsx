@@ -3,7 +3,7 @@ import traslochi from "../public/images/traslochi.jpg";
 
 const About = () => {
   return (
-    <div id="about" className="relative lg:min-h-screen">
+    <article id="about" className="relative lg:min-h-screen">
       <div className="absolute lg:left-96 p-10 hidden lg:block -z-10">
         <Image
           src={traslochi}
@@ -18,23 +18,28 @@ const About = () => {
           <div className="w-full h-10 bg-secondary mt-5"></div>
         </div>
         <div className="w-full h-full flex justify-center items-center">
-          <div className="bg-slate-100 w-96 h-fit bg-opacity-80 backdrop-blur-md rounded-2xl shadow-2xl">
+          <div className="bg-slate-100  h-fit bg-opacity-80 backdrop-blur-md rounded-2xl shadow-2xl">
             <h1 className="font-bold text-4xl text-center m-8">
-              BAM Traslochi
+              <p className="text-secondary-focus">BAM Traslochi SRL</p> Il tuo
+              Affidabile Partner per i Traslochi
             </h1>
-            <p className="text-start text-lg px-10 font-semibold mb-4">
-              Azienda specializzata nei traslochi di privati e aziende nazionali
-              e internazionali da più di 10 anni soddisfando ogni esigenza dei
-              nostri clienti.
+            <p className="text-start text-lg px-10 font-normal mb-4">
+              BAM Traslochi SRL è un'azienda consolidata con oltre un decennio
+              di esperienza nell'arte del trasloco. Che tu sia un individuo che
+              si sta trasferendo in una nuova casa o un'azienda che necessita di
+              una transizione senza intoppi, siamo qui per te.
               <br />
-              Noi pensiamo anche alla sostenibilità ambientale grazie alla sua
-              flotta di ultima generazione con noi traslocare non è mai stato
-              così semplice
+              <br />
+              Ciò che ci distingue è il nostro impegno incrollabile verso la
+              sostenibilità ambientale. La nostra flotta all'avanguardia è una
+              testimonianza di questa dedizione. Con BAM Traslochi, il trasloco
+              non è mai stato così facile, e puoi farlo con la tranquillità di
+              sapere di scegliere soluzioni eco-sostenibili.
             </p>
           </div>
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 

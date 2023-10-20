@@ -22,7 +22,7 @@ const navLinks = [
 
 const Nav = () => {
   return (
-    <div className="navbar bg-base-100 bg-opacity-50 backdrop-blur-md fixed z-20">
+    <nav className="navbar bg-base-100 bg-opacity-50 backdrop-blur-md fixed z-20">
       <div className="flex-1">
         <Link href="/#initial">
           <button className="btn btn-ghost normal-case text-2xl font-bold flex gap-2">
@@ -63,7 +63,7 @@ const Nav = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </nav>
   );
 };
 

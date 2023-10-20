@@ -49,7 +49,7 @@ const Home = ({ tasks, contactDetails }: Props) => {
         />
         <meta
           name="description"
-          content="BAM Traslochi SRL, Azienda specializzata nei traslochi di privati e aziende nazionali e internazionali da più di 10 anni soddisfando ogni esigenza dei nostri clienti. Verona, Villafranca di verona"
+          content="BAM Traslochi SRL: Traslochi nazionali e internazionali per privati e aziende. Serviamo Verona e Villafranca di Verona da oltre 11 anni."
         />
         <meta property="article:tag" content="parco mezzi" />
         <meta property="article:tag" content="Traslochi" />
@@ -61,7 +61,7 @@ const Home = ({ tasks, contactDetails }: Props) => {
         />
         <meta
           property="article:modified_time"
-          content="2022-06-01T13:51:24+00:00"
+          content="2023-10-01T13:51:24+00:00"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
