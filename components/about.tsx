@@ -24,17 +24,18 @@ const About = () => {
               Affidabile Partner per i Traslochi
             </h1>
             <p className="text-start text-lg px-10 font-normal mb-4">
-              BAM Traslochi SRL è un'azienda consolidata con oltre un decennio
-              di esperienza nell'arte del trasloco. Che tu sia un individuo che
-              si sta trasferendo in una nuova casa o un'azienda che necessita di
-              una transizione senza intoppi, siamo qui per te.
+              BAM Traslochi SRL è un&apos;azienda consolidata con oltre un
+              decennio di esperienza nell&apos;arte del trasloco. Che tu sia un
+              individuo che si sta trasferendo in una nuova casa o
+              un&apos;azienda che necessita di una transizione senza intoppi,
+              siamo qui per te.
               <br />
               <br />
               Ciò che ci distingue è il nostro impegno incrollabile verso la
-              sostenibilità ambientale. La nostra flotta all'avanguardia è una
-              testimonianza di questa dedizione. Con BAM Traslochi, il trasloco
-              non è mai stato così facile, e puoi farlo con la tranquillità di
-              sapere di scegliere soluzioni eco-sostenibili.
+              sostenibilità ambientale. La nostra flotta all&apos;avanguardia è
+              una testimonianza di questa dedizione. Con BAM Traslochi, il
+              trasloco non è mai stato così facile, e puoi farlo con la
+              tranquillità di sapere di scegliere soluzioni eco-sostenibili.
             </p>
           </div>
         </div>
