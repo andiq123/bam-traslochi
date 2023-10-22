@@ -9,8 +9,8 @@ interface Props {
 
 const Initial = ({ openModal }: Props) => {
   return (
-    <section id="initial" className="relative flex flex-col mt-10">
-      <div className="absolute">
+    <section id="initial" className="relative flex flex-col lg:mt-10 mt-0">
+      <div className="absolute lg:mt-0 mt-20">
         <Image src={traslochiHome} alt="Logo" />
       </div>
 
@@ -19,10 +19,11 @@ const Initial = ({ openModal }: Props) => {
           <div className="lg:mr-10 mr-5">
             <Image src={cargo} width={200} height={200} alt="altroLogo" />
           </div>
-          <h1 className="text-5xl font-bold">
-            BAM Traslochi - Il Tuo Partner Affidabile per i Traslochi
-          </h1>
+          <h1 className="text-5xl font-bold">BAM Traslochi</h1>
         </div>
+        <p className="italic -mt-4 ">
+          Il Tuo Partner Affidabile per i Traslochi
+        </p>
         <p className="font-semibold lg:text-4xl text-2xl">
           Trasloca in modo semplice con BAM Traslochi!
         </p>
