@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import About from "../components/about";
 import Contact from "../components/contact/contact";
 import CookieConsent from "../components/cookieConsent";
@@ -32,8 +32,8 @@ const Home = ({ tasks, contactDetails }: Props) => {
       <Head>
         <link rel="dns-prefetch" href="//translate.google.com" />
         <link rel="dns-prefetch" href="//s.w.org" />
-        <link rel="canonical" href="https://bamsrl-traslochi.it/" />
-        <link rel="shortlink" href="https://bamsrl-traslochi.it/" />
+        {/* <link rel="canonical" href="https://bamsrl-traslochi.it/" />
+        <link rel="shortlink" href="https://bamsrl-traslochi.it/" /> */}
         <title>BAM SRL</title>
         <meta
           name="robots"
@@ -51,7 +51,7 @@ const Home = ({ tasks, contactDetails }: Props) => {
           name="description"
           content="BAM Traslochi SRL: Traslochi nazionali e internazionali per privati e aziende. Serviamo Verona e Villafranca di Verona da oltre 11 anni."
         />
-        <meta property="article:tag" content="parco mezzi" />
+        <meta property="article:tag" content="Parco mezzi" />
         <meta property="article:tag" content="Traslochi" />
         <meta property="article:tag" content="BAM SRL" />
         <meta property="article:tag" content="BAM Traslochi" />

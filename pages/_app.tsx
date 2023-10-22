@@ -4,21 +4,10 @@ import Layout from "../components/layout/layout";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { ToastContainer } from "react-toastify";
-import { useEffect } from "react";
-import { insertVisitor } from "../lib/firebaseApiWrapper";
 import Script from "next/script";
 config.autoAddCss = false;
 
 function MyApp({ Component, pageProps }: AppProps) {
-  useEffect(() => {
-    try {
-      //if development mode, don't insert visitor
-      if (process.env.NODE_ENV === "development") return;
-
-      insertVisitor();
-    } catch (error) {}
-  }, []);
-
   return (
     <Layout>
       <ToastContainer />
