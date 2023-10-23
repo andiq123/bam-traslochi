@@ -59,7 +59,7 @@ const Modal = ({ isOpen, closeModal, phoneNumber }: Props) => {
         checked={isOpen}
         readOnly
       />
-      <div className="modal">
+      <div className="modal backdrop-blur-sm">
         <div className="modal-box justify-center flex flex-col gap-5 items-center">
           <h3 className="font-bold text-lg">Conttami su</h3>
           <ContactField
