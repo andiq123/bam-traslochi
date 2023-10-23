@@ -64,6 +64,10 @@ const Home = ({ tasks, contactDetails }: Props) => {
           content="2023-10-01T13:51:24+00:00"
         />
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="google-site-verification"
+          content="WBgzmv6vGACqhbsB68qpzlmk45ATCnyd5RJEr7Urc-E"
+        />
       </Head>
 
       <Modal
