@@ -10,6 +10,8 @@ const About = () => {
           alt="traslochi-logo"
           className="mask mask-parallelogram-2"
           objectFit="cover"
+          placeholder="blur"
+          quality={100}
         ></Image>
       </div>
       <div className="flex lg:flex-row flex-col w-full justify-center items-center max-w-5xl mx-auto mt-20 lg:gap-20 lg:sticky lg:top-28 lg:mb-0 mb-12">
