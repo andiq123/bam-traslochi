@@ -11,12 +11,7 @@ const Initial = ({ openModal }: Props) => {
   return (
     <section id="initial" className="relative flex flex-col lg:mt-10 mt-0">
       <div className="absolute lg:mt-0 mt-20">
-        <Image
-          src={traslochiHome}
-          alt="Logo"
-          placeholder="blur"
-          quality={100}
-        />
+        <Image src={traslochiHome} alt="Logo" quality={100} />
       </div>
 
       <div className="popUpSlow flex flex-col justify-center items-center bg-secondary lg:mt-64 mt-52 p-5 bg-opacity-50 backdrop-blur-md">
@@ -27,7 +22,6 @@ const Initial = ({ openModal }: Props) => {
               width={200}
               height={200}
               alt="altroLogo"
-              placeholder="blur"
               quality={100}
             />
           </div>

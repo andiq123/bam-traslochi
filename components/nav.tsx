@@ -32,7 +32,6 @@ const Nav = () => {
               width={50}
               height={50}
               alt="cargo-logo"
-              placeholder="blur"
               quality={100}
             />
             Bam Traslochi

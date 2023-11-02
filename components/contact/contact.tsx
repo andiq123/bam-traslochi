@@ -122,7 +122,6 @@ const Contact = ({ details, openModal }: Props) => {
               width={width}
               height={height}
               alt="google maps"
-              placeholder="blur"
               quality={100}
             ></Image>
           </div>
