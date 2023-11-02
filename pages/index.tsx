@@ -50,6 +50,10 @@ const Home = ({ tasks, contactDetails }: Props) => {
           content="pVZbKXV3NKcjq3vizj0OcVBNTtPaJKOsBg42uw0DSks"
         />
         <meta
+          name="google-site-verification"
+          content="Q_K3eXshjO0maCZGR66Q4mZOZ60t09lwMKXCUf93ZgA"
+        />
+        <meta
           name="description"
           content="BAM Traslochi SRL: Traslochi nazionali e internazionali per privati e aziende. Serviamo Verona e Villafranca di Verona da oltre 11 anni."
         />
