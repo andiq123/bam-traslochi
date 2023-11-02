@@ -30,37 +30,21 @@ const Home = ({ tasks, contactDetails }: Props) => {
   return (
     <div>
       <Head>
+        <title>
+          Traslochi BAM SRL - Servizio professionale di Traslochi a Verona e
+          Villafranca di Verona
+        </title>
+        <meta
+          name="description"
+          content="Traslochi BAM SRL offre servizi professionali di trasloco a Verona e Villafranca di Verona. Siamo leader nel settore con oltre 11 anni di esperienza."
+        />
+        <meta
+          name="keywords"
+          content="Traslochi, Traslochi Verona, Trasloco Verona, BAM SRL, traslochi nazionali, traslochi internazionali"
+        />
+        <link rel="canonical" href="https://bamsrl-traslochi.it/" />
         <link rel="dns-prefetch" href="//translate.google.com" />
         <link rel="dns-prefetch" href="//s.w.org" />
-        <link rel="canonical" href="https://bamsrl-traslochi.it/" />
-        <link rel="shortlink" href="https://bamsrl-traslochi.it/" />
-        <link rel="canonical" href="https://bam-traslochi.it/" />
-        <link rel="shortlink" href="https://bam-traslochi.it/" />
-        <title>BAM SRL</title>
-        <meta
-          name="robots"
-          content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
-        />
-        <meta
-          name="description"
-          content="Traslochi Italia, Trasloco in modo facile!"
-        />
-        <meta
-          name="description"
-          content="BAM Traslochi SRL: Traslochi nazionali e internazionali per privati e aziende. Serviamo Verona e Villafranca di Verona da oltre 11 anni."
-        />
-        <meta property="article:tag" content="Parco mezzi" />
-        <meta property="article:tag" content="Traslochi" />
-        <meta property="article:tag" content="BAM SRL" />
-        <meta property="article:tag" content="BAM Traslochi" />
-        <meta
-          property="article:published_time"
-          content="2022-01-01T14:27:53+00:00"
-        />
-        <meta
-          property="article:modified_time"
-          content="2023-10-01T13:51:24+00:00"
-        />
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="google-site-verification"
