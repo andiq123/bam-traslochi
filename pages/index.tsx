@@ -45,11 +45,6 @@ const Home = ({ tasks, contactDetails }: Props) => {
           name="description"
           content="Traslochi Italia, Trasloco in modo facile!"
         />
-
-        <meta
-          name="google-site-verification"
-          content="Q_K3eXshjO0maCZGR66Q4mZOZ60t09lwMKXCUf93ZgA"
-        />
         <meta
           name="description"
           content="BAM Traslochi SRL: Traslochi nazionali e internazionali per privati e aziende. Serviamo Verona e Villafranca di Verona da oltre 11 anni."
@@ -69,7 +64,7 @@ const Home = ({ tasks, contactDetails }: Props) => {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="google-site-verification"
-          content="WBgzmv6vGACqhbsB68qpzlmk45ATCnyd5RJEr7Urc-E"
+          content="Q_K3eXshjO0maCZGR66Q4mZOZ60t09lwMKXCUf93ZgA"
         />
       </Head>
 
