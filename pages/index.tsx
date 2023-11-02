@@ -34,6 +34,8 @@ const Home = ({ tasks, contactDetails }: Props) => {
         <link rel="dns-prefetch" href="//s.w.org" />
         <link rel="canonical" href="https://bamsrl-traslochi.it/" />
         <link rel="shortlink" href="https://bamsrl-traslochi.it/" />
+        <link rel="canonical" href="https://bam-traslochi.it/" />
+        <link rel="shortlink" href="https://bam-traslochi.it/" />
         <title>BAM SRL</title>
         <meta
           name="robots"

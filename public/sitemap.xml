@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-   <url>
-      <loc>https://bamsrl-traslochi.it</loc>
-       <lastmod>2022-06-02</lastmod>
-   </url>
-
-   <url>
-        <loc>https://bamsrl-traslochi.it/#servizi</loc>
-        <lastmod>2022-06-02</lastmod>
+    <url>
+        <loc>https://www.bamsrl-traslochi.it/</loc>
+        <priority>1.0</priority>
+        <changefreq>yearly</changefreq>
     </url>
-
-   <url>
-        <loc>https://bamsrl-traslochi.it/#contatti</loc>
-        <lastmod>2022-06-02</lastmod>
-    </url> 
-
-</urlset> 
+    <url>
+        <loc>https://www.bamsrl-traslochi.it/#initial</loc>
+        <priority>0.8</priority>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.bamsrl-traslochi.it/#servizi</loc>
+        <priority>0.8</priority>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.bamsrl-traslochi.it/#about</loc>
+        <priority>0.8</priority>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.bamsrl-traslochi.it/#contact</loc>
+        <priority>0.8</priority>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.bam-traslochi.it/</loc>
+        <priority>0.8</priority>
+        <changefreq>yearly</changefreq>
+        <xhtml:link rel="canonical" href="https://www.bam-traslochi.it/" />
+    </url>
+</urlset>
