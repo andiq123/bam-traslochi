@@ -22,13 +22,14 @@ function About() {
               individuo che si sta trasferendo in una nuova casa o
               un&apos;azienda che necessita di una transizione senza intoppi,
               siamo qui per te.
-              <br />
-              <br />
-              Ciò che ci distingue è il nostro impegno incrollabile verso la
-              sostenibilità ambientale. La nostra flotta all&apos;avanguardia è
-              una testimonianza di questa dedizione. Con BAM Traslochi, il
-              trasloco non è mai stato così facile, e puoi farlo con la
-              tranquillità di sapere di scegliere soluzioni eco-sostenibili.
+              <span className="lg:block hidden">
+                <br />
+                Ciò che ci distingue è il nostro impegno incrollabile verso la
+                sostenibilità ambientale. La nostra flotta all&apos;avanguardia
+                è una testimonianza di questa dedizione. Con BAM Traslochi, il
+                trasloco non è mai stato così facile, e puoi farlo con la
+                tranquillità di sapere di scegliere soluzioni eco-sostenibili.
+              </span>
             </p>
           </div>
         </div>

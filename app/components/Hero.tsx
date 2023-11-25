@@ -16,7 +16,7 @@ function Hero() {
         />
 
         <div className="absolute bottom-0 lg:h-[30%] left-0 w-full bg-base-100 bg-opacity-90 p-5 backdrop-blur-sm">
-          <div className="text-5xl font-bold">BAM Traslochi</div>
+          <div className="text-4xl lg:text-5xl font-bold">BAM Traslochi</div>
           <div className="text-xl mt-4">
             <p className="font-semibold">
               Effettua il trasloco con facilità insieme a noi!

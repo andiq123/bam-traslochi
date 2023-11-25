@@ -10,7 +10,7 @@ function Services() {
         <p className="text-4xl font-bold text-center">Servizi</p>
       </div>
       <div className="px-10 flex flex-wrap gap-10 justify-center">
-        <div className="bg-base-200 py-5 rounded-xl flex flex-col justify-center items-center gap-5 hover:scale-110 duration-300 ease-in-out">
+        <div className="bg-base-200 py-5 px-7 rounded-xl flex flex-col justify-center items-center gap-5 hover:scale-110 duration-300 ease-in-out">
           <Image
             src={MovingTruck}
             sizes="100vw"
@@ -19,11 +19,11 @@ function Services() {
           />
           <div>
             <h1 className="px-10 text-3xl font-bold mb-3">Traslochi</h1>
-            <ul className="font-light flex flex-col gap-1">
-              <li className="py-1 px-4 w-fit mx-auto rounded-xl bg-base-300 hover:scale-125 duration-150 ease-in-out">
+            <ul className="font-light flex flex-col gap-2">
+              <li className="py-1 px-4 w-fit mx-auto rounded-md bg-base-300 hover:scale-110 duration-150 ease-in-out">
                 Aziende e Privati
               </li>
-              <li className="py-1 px-4 w-fit mx-auto rounded-xl bg-base-300 hover:scale-125 duration-150 ease-in-out">
+              <li className="py-1 px-4 w-fit mx-auto rounded-md bg-base-300 hover:scale-110 duration-150 ease-in-out">
                 Nazionali e Internazionali
               </li>
             </ul>
@@ -39,18 +39,18 @@ function Services() {
           />
           <div>
             <h1 className="px-5 text-3xl font-bold mb-3">Montaggio Mobili</h1>
-            <ul className="font-light flex flex-col gap-1">
-              <li className="py-1 px-4 w-fit mx-auto rounded-xl bg-base-300 hover:scale-125 duration-150 ease-in-out">
+            <ul className="font-light flex flex-col gap-2">
+              <li className="py-1 px-4 w-fit mx-auto rounded-md bg-base-300 hover:scale-110 duration-150 ease-in-out">
                 Montaggio su Misura
               </li>
-              <li className="py-1 px-4 w-fit mx-auto rounded-xl bg-base-300 hover:scale-125 duration-150 ease-in-out">
+              <li className="py-1 px-4 w-fit mx-auto rounded-md bg-base-300 hover:scale-110 duration-150 ease-in-out">
                 Modifiche Personalizzate
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="bg-base-200 py-5 rounded-xl flex flex-col justify-center items-center gap-5 hover:scale-110 duration-300 ease-in-out">
+        <div className="bg-base-200 py-5 px-7 rounded-xl flex flex-col justify-center items-center gap-5 hover:scale-110 duration-300 ease-in-out">
           <Image
             src={Rent}
             sizes="100vw"
@@ -61,11 +61,11 @@ function Services() {
             <h1 className="px-5 text-3xl font-bold mb-3 text-center">
               Noleggio
             </h1>
-            <ul className="font-light flex flex-col gap-1">
-              <li className="py-1 px-4 w-fit mx-auto rounded-xl bg-base-300 hover:scale-125 duration-150 ease-in-out">
+            <ul className="font-light flex flex-col gap-2">
+              <li className="py-1 px-4 w-fit mx-auto rounded-md bg-base-300 hover:scale-110 duration-150 ease-in-out">
                 Camion per Traslochi
               </li>
-              <li className="py-1 px-4 w-fit mx-auto rounded-xl bg-base-300 hover:scale-125 duration-150 ease-in-out">
+              <li className="py-1 px-4 w-fit mx-auto rounded-md bg-base-300 hover:scale-110 duration-150 ease-in-out">
                 Scala con Operatore
               </li>
             </ul>
