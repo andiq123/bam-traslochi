@@ -18,7 +18,7 @@ function Services() {
             className="mask mask-squircle h-44 w-full"
           />
           <div>
-            <h1 className="px-10 text-2xl font-bold mb-3">Traslochi</h1>
+            <h1 className="px-10 text-3xl font-bold mb-3">Traslochi</h1>
             <ul className="font-light flex flex-col gap-1">
               <li className="py-1 px-4 w-fit mx-auto rounded-xl bg-base-300 hover:scale-125 duration-150 ease-in-out">
                 Aziende e Privati
@@ -38,7 +38,7 @@ function Services() {
             className="mask mask-squircle h-44 w-full"
           />
           <div>
-            <h1 className="px-5 text-2xl font-bold mb-3">Montaggio Mobili</h1>
+            <h1 className="px-5 text-3xl font-bold mb-3">Montaggio Mobili</h1>
             <ul className="font-light flex flex-col gap-1">
               <li className="py-1 px-4 w-fit mx-auto rounded-xl bg-base-300 hover:scale-125 duration-150 ease-in-out">
                 Montaggio su Misura
@@ -58,7 +58,7 @@ function Services() {
             className="mask mask-squircle h-44 w-full -left-32"
           />
           <div>
-            <h1 className="px-5 text-2xl font-bold mb-3 text-center">
+            <h1 className="px-5 text-3xl font-bold mb-3 text-center">
               Noleggio
             </h1>
             <ul className="font-light flex flex-col gap-1">

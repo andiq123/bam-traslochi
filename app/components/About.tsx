@@ -15,7 +15,7 @@ function About() {
             <FontAwesomeIcon icon={faTruck} className="h-14 w-14" />{" "}
             <span>Chi siamo?</span>
           </div>
-          <div className="text-xl mt-4">
+          <div className="text-xl mt-4 leading-8">
             <p>
               BAM Traslochi SRL è un&apos;azienda consolidata con oltre un
               decennio di esperienza nell&apos;arte del trasloco. Che tu sia un
@@ -38,7 +38,7 @@ function About() {
           <div className="text-4xl font-bold flex lg:flex-row flex-col gap-5 mb-3">
             <span>Contatti</span>
           </div>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 leading-8">
             <InfoElement
               icon="Contatto"
               text={Contact.Contatto}
