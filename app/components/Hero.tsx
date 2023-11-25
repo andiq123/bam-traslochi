@@ -18,7 +18,9 @@ function Hero() {
         <div className="absolute bottom-0 lg:h-[30%] left-0 w-full bg-base-100 bg-opacity-90 p-5 backdrop-blur-sm">
           <div className="text-4xl font-bold">BAM Traslochi</div>
           <div className="text-xl mt-4">
-            <p className="font-semibold">Trasloca in modo semplice con noi!</p>
+            <p className="font-semibold">
+              Effettua il trasloco con facilità insieme a noi!
+            </p>
           </div>
         </div>
       </div>
@@ -35,12 +37,3 @@ function Hero() {
 }
 
 export default Hero;
-
-{
-  /* <div className="flex flex-col gap-5 w-full h-full">
-<div className="skeleton h-80 w-full"></div>
-<div className="skeleton h-4 w-52"></div>
-<div className="skeleton h-4 w-full"></div>
-<div className="skeleton h-4 w-full"></div>
-</div> */
-}

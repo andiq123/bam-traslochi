@@ -10,7 +10,7 @@ type Contact = {
 
 function FormContent() {
   const defaultMessage =
-    "Ciao, Vorrei avere un preventivo per il trasloco. Grazie!";
+    "Ciao, vorrei ricevere un preventivo per il trasloco. Grazie!";
 
   const [contact, setContact] = useState<Contact>({
     name: "",
@@ -42,7 +42,7 @@ function FormContent() {
 
   return (
     <>
-      <div className="text-4xl font-bold">Fa una richiesta</div>
+      <div className="text-4xl font-bold">Invia la tua richiesta</div>
       <div className="text-xl mt-4">
         <form
           className="flex flex-col gap-4"

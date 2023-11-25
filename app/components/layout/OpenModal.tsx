@@ -9,7 +9,7 @@ function OpenModal() {
         doc.showModal();
       }}
     >
-      Fa una richiesta
+      Invia la tua richiesta
     </button>
   );
 }
