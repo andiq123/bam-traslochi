@@ -10,9 +10,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "BAM SRL Traslochi",
-  description: `Traslochi BAM SRL offre servizi professionali di trasloco a Verona e Villafranca di Verona. Siamo leader nel settore con oltre ${
+  description: `Traslochi BAM SRL: leader nei traslochi a Verona con ${
     new Date().getFullYear() - 2012
-  } anni di esperienza.`,
+  } anni di esperienza. Servizi completi per traslochi aziendali, industriali, e residenziali.`,
   keywords: [
     "traslochi",
     "traslochi verona",
