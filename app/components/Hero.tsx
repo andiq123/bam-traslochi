@@ -11,8 +11,8 @@ function Hero() {
           src={TraslochiHome}
           alt="Traslochi Home"
           sizes="100vw"
+          priority={true}
           className="top-0 left-0 -z-50 opacity-90 h-full w-full object-cover lg:pb-0 pb-32"
-          placeholder="blur"
         />
 
         <div className="absolute bottom-0 lg:h-[30%] left-0 w-full bg-base-100 bg-opacity-90 p-5 backdrop-blur-sm">
@@ -35,3 +35,12 @@ function Hero() {
 }
 
 export default Hero;
+
+{
+  /* <div className="flex flex-col gap-5 w-full h-full">
+<div className="skeleton h-80 w-full"></div>
+<div className="skeleton h-4 w-52"></div>
+<div className="skeleton h-4 w-full"></div>
+<div className="skeleton h-4 w-full"></div>
+</div> */
+}
