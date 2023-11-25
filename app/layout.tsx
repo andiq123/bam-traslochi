@@ -5,6 +5,7 @@ import Navbar from "./components/layout/Navbar";
 import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer";
 import Modal from "./components/layout/Modal";
+import WhatsappRedirect from "./components/layout/WhatsappRedirect";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -46,6 +47,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <WhatsappRedirect />
       </body>
     </html>
   );
