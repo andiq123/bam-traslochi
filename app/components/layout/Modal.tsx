@@ -4,8 +4,8 @@ import FormContent from "./FormContent";
 function Modal() {
   return (
     <div>
-      <dialog id="modal" className="modal">
-        <div className="modal-box">
+      <dialog id="modal" className="modal backdrop-blur-sm">
+        <div className="modal-box -mt-56 ">
           <FormContent />
           <div className="modal-action">
             <form method="dialog" className="w-full">

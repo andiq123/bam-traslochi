@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function Stats() {
   return (
-    <div className="flex justify-start">
+    <div className="flex justify-start lg:flex-row flex-col">
       <div className="stats lg:stats-horizontal stats-vertical shadow">
         <div className="stat">
           <div className="stat-figure text-primary">
