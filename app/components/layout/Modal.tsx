@@ -1,4 +1,3 @@
-import React from "react";
 import FormContent from "./FormContent";
 
 function Modal() {

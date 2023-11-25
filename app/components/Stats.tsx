@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function Stats() {
   return (
-    <div className="flex justify-start lg:flex-row flex-col">
+    <div className="flex justify-start lg:flex-row flex-col gap-3">
       <div className="stats lg:stats-horizontal stats-vertical shadow">
         <div className="stat">
           <div className="stat-figure text-primary">
@@ -44,9 +44,9 @@ function Stats() {
               ></path>
             </svg>
           </div>
-          <div className="stat-title">Piu di</div>
+          <div className="stat-title">Più di</div>
           <div className="stat-value text-secondary">100 Clienti</div>
-          <div className="stat-desc">Piu di 100 clienti sodisfati</div>
+          <div className="stat-desc">Più di 100 clienti soddisfatti.</div>
         </div>
       </div>
       <Link

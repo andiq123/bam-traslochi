@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Contact } from "../data/site-info";
-import { faBusinessTime, faTruck } from "@fortawesome/free-solid-svg-icons";
+import { faTruck } from "@fortawesome/free-solid-svg-icons";
 import InfoElement from "./layout/InfoElement";
 
 function About() {
