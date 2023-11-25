@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     canonical: "https://bam-traslochi.it/",
     languages: { it: "https://bam-traslochi.it" },
   },
-  verification: { google: "Q_K3eXshjO0maCZGR66Q4mZOZ60t09lwMKXCUf93ZgA" },
+  verification: { google: "pVZbKXV3NKcjq3vizj0OcVBNTtPaJKOsBg42uw0DSks" },
 };
 
 export default function RootLayout({
