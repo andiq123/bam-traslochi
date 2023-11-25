@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://www.bamsrl-traslochi.it/</loc>
+        <priority>1.0</priority>
+        <changefreq>Monthly</changefreq>
+    </url>
+
+    <url>
+        <loc>https://www.bamsrl-traslochi.it/#contatti</loc>
+        <priority>0.8</priority>
+        <changefreq>Monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.bamsrl-traslochi.it/#servizi</loc>
+        <priority>0.8</priority>
+        <changefreq>Monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.bam-traslochi.it/</loc>
+        <priority>0.8</priority>
+        <changefreq>Monthly</changefreq>
+    </url>
+</urlset>
