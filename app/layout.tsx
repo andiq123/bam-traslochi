@@ -46,8 +46,8 @@ export default function RootLayout({
         <Toaster />
         <Navbar />
         {children}
-        <Footer />
         <WhatsappRedirect />
+        <Footer />
       </body>
     </html>
   );

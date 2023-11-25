@@ -14,7 +14,7 @@ function WhatsappRedirect() {
   return (
     <div
       onClick={redirectToWhatsap}
-      className="lg:hidden sticky w-fit h-fit bg-green-700 bg-opacity-90 p-1 rounded-xl bottom-5 left-[77%] cursor-pointer hover:bg-green-800 duration-200 ease-in-out slideFromRight"
+      className="lg:hidden sticky w-fit h-fit bg-green-700 bg-opacity-90 p-1 rounded-xl bottom-5 left-[80%] cursor-pointer hover:bg-green-800 duration-200 ease-in-out slideFromRight"
     >
       <FontAwesomeIcon icon={faWhatsapp} className="h-14 w-14" />
     </div>
