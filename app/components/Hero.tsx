@@ -6,7 +6,7 @@ import FormContent from "./layout/FormContent";
 function Hero() {
   return (
     <div id="home" className="flex lg:flex-row flex-col justify-center gap-10">
-      <div className="flex-2 rounded-xl relative overflow-hidden">
+      <div className="flex-2 rounded-t-xl relative overflow-hidden">
         <Image
           src={TraslochiHome}
           alt="Traslochi Home"
