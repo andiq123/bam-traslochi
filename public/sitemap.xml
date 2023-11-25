@@ -16,9 +16,4 @@
         <priority>0.8</priority>
         <changefreq>Monthly</changefreq>
     </url>
-    <url>
-        <loc>https://www.bam-traslochi.it/</loc>
-        <priority>0.8</priority>
-        <changefreq>Monthly</changefreq>
-    </url>
 </urlset>
