@@ -51,7 +51,7 @@ function Stats() {
       </div>
       <Link
         href="https://www.traslochi24.it/traslocatori/2wL0Z/traslochi-b-a-m-srl/"
-        className="flex flex-col lg:ml-32 gap-2 bg-base-300 p-5 items-center justify-center rounded-xl hover:shadow-xl transition-all duration-300 ease-in-out hover:scale-110"
+        className="flex flex-col mx-auto lg:ml-32 w-fit gap-2 bg-base-300 lg:py-0 py-3 px-5 items-center justify-center rounded-xl hover:shadow-xl transition-all duration-300 ease-in-out hover:scale-110"
       >
         <div className="font-bold">Ci trovi anche su:</div>
         <Image
