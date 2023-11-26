@@ -12,6 +12,7 @@ function Hero() {
           alt="Traslochi Home"
           sizes="100vw"
           priority={true}
+          placeholder="blur"
           className="top-0 left-0 -z-50 opacity-90 h-full w-full object-cover lg:pb-0 pb-32"
         />
 
