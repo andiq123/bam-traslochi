@@ -27,7 +27,7 @@ function About() {
             trasporto mobili e servizi di imballaggio a Verona, garantendo un
             trasloco sicuro. Sia che siate una casa, un ufficio o abbiate un
             pianoforte, ci occupiamo di ogni trasloco con attenzione. Le nostre
-            soluzioni sono convenienti e rispettano l'ambiente, perché il
+            soluzioni sono convenienti e rispettano l&apos;ambiente, perché il
             trasferimento non dovrebbe essere costoso. Contattateci oggi per un
             preventivo personalizzato. Siamo qui per semplificare il vostro
             trasloco a Verona con fiducia e tranquillità.
