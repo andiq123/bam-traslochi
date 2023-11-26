@@ -6,6 +6,7 @@ import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer";
 import Modal from "./components/layout/Modal";
 import WhatsappRedirect from "./components/layout/WhatsappRedirect";
+import HeartFloating from "./components/layout/HeartFloating";
 
 const inter = Inter({ subsets: ["latin"] });
 
