@@ -31,3 +31,15 @@
     opacity: 1;
   }
 }
+
+@keyframes heart-float {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+}
