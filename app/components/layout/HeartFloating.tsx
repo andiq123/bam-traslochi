@@ -36,7 +36,7 @@ function HeartFloating() {
 
   return (
     <div
-      className="cursor-pointer  bg-base-300 p-2 rounded-lg hover:bg-base-200 transition-all duration-300 ease-in-out"
+      className="cursor-pointer bg-base-200 p-2 rounded-lg hover:bg-base-300 transition-all duration-300 ease-in-out"
       onClick={addClick}
     >
       <div className="hover:scale-110 transition-all duration-300 relative">

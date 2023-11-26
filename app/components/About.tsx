@@ -9,7 +9,7 @@ function About() {
       id="contatti"
       className="flex flex-col-reverse lg:flex-row justify-center gap-10"
     >
-      <div className="flex-1 rounded-xl relative overflow-hidden bg-base-300 p-10">
+      <div className="flex-1 rounded-xl overflow-hidden bg-base-300 p-10">
         <div className="text-4xl font-bold flex items-center gap-5">
           <FontAwesomeIcon icon={faTruck} className="h-14 w-14" />{" "}
           <span>Chi siamo?</span>
@@ -34,26 +34,16 @@ function About() {
           </p>
         </div>
       </div>
-      <div className="flex-1 relative overflow-hidden bg-base-300 p-10 rounded-xl">
-        <div className="sticky top-0 left-0">
-          <div className="text-4xl font-bold mb-3">
-            <span>Contatti</span>
-          </div>
-          <div className="flex flex-col gap-4 leading-8">
-            <InfoElement
-              icon="Contatto"
-              text={Contact.Contatto}
-              canCopy={true}
-            />
-            <InfoElement
-              icon="Telefono"
-              text={Contact.Telefono}
-              canCopy={true}
-            />
-            <InfoElement icon="Email" text={Contact.Email} canCopy={true} />
-            <InfoElement icon="Indirizzo" text={Contact.Indirizzo} />
-            <InfoElement icon="Città" text={Contact.Città} />
-          </div>
+      <div className="flex-1 overflow-hidden bg-base-300 p-10 rounded-xl lg:sticky lg:top-5 lg:h-fit">
+        <div className="text-4xl font-bold mb-3">
+          <span>Contatti</span>
+        </div>
+        <div className="flex flex-col gap-4 leading-8">
+          <InfoElement icon="Contatto" text={Contact.Contatto} canCopy={true} />
+          <InfoElement icon="Telefono" text={Contact.Telefono} canCopy={true} />
+          <InfoElement icon="Email" text={Contact.Email} canCopy={true} />
+          <InfoElement icon="Indirizzo" text={Contact.Indirizzo} />
+          <InfoElement icon="Città" text={Contact.Città} />
         </div>
       </div>
     </div>
