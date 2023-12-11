@@ -5,7 +5,10 @@ import FormContent from "./layout/FormContent";
 
 function Hero() {
   return (
-    <div id="home" className="flex lg:flex-row flex-col justify-center gap-10">
+    <section
+      id="home"
+      className="flex lg:flex-row flex-col justify-center gap-10"
+    >
       <div className="flex-2 flex rounded-t-xl relative overflow-hidden">
         <div className="w-[100vw]">
           <Image
@@ -20,11 +23,11 @@ function Hero() {
 
         <div className="absolute bottom-0 lg:h-[30%] left-0 w-full bg-base-100 bg-opacity-90 p-5 backdrop-blur-sm">
           <div className="text-4xl lg:text-5xl font-bold">BAM Traslochi</div>
-          <div className="text-xl mt-4">
+          <article className="text-xl mt-4">
             <p className="font-semibold">
               Effettua il trasloco con facilità insieme a noi!
             </p>
-          </div>
+          </article>
         </div>
       </div>
 
@@ -35,7 +38,7 @@ function Hero() {
       </div>
 
       <OpenModal />
-    </div>
+    </section>
   );
 }
 

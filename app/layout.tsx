@@ -12,7 +12,7 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "BAM SRL Traslochi, traslochi verona.",
+  title: "BAM Traslochi SRL - Traslochi a Verona",
   description: `Traslochi BAM SRL: leader nei traslochi a Verona con ${
     new Date().getFullYear() - 2012
   } anni di esperienza. Servizi completi per traslochi aziendali, industriali, e residenziali.`,

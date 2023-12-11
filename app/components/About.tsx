@@ -5,7 +5,7 @@ import InfoElement from "./layout/InfoElement";
 
 function About() {
   return (
-    <div
+    <section
       id="contatti"
       className="flex flex-col-reverse lg:flex-row justify-center gap-10"
     >
@@ -14,7 +14,7 @@ function About() {
           <FontAwesomeIcon icon={faTruck} className="h-14 w-14" />{" "}
           <span>Chi siamo?</span>
         </div>
-        <div className="text-xl mt-4 leading-8">
+        <article className="text-xl mt-4 leading-8">
           <p>
             Benvenuti da BAM Traslochi SRL, il vostro compagno affidabile per
             traslochi a Verona. Con oltre dieci anni di esperienza,
@@ -32,7 +32,7 @@ function About() {
             preventivo personalizzato. Siamo qui per semplificare il vostro
             trasloco a Verona con fiducia e tranquillità.
           </p>
-        </div>
+        </article>
       </div>
       <div className="flex-1 overflow-hidden bg-base-300 p-10 rounded-xl lg:sticky lg:top-5 lg:h-fit">
         <div className="text-4xl font-bold mb-3">
@@ -46,7 +46,7 @@ function About() {
           <InfoElement icon="Città" text={Contact.Città} />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

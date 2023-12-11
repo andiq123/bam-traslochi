@@ -24,7 +24,7 @@ const menu: MenuItem[] = [
 
 function Navbar() {
   return (
-    <div className="drawer drawer-end">
+    <header className="drawer drawer-end">
       <input id="Menu" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         <div className="w-full  bg-base-300">
@@ -97,7 +97,7 @@ function Navbar() {
           ))}
         </ul>
       </div>
-    </div>
+    </header>
   );
 }
 

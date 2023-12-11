@@ -5,7 +5,7 @@ import Rent from "../../public/images/rent.webp";
 
 function Services() {
   return (
-    <div id="servizi" className="pb-10 w-full bg-base-300 rounded-xl">
+    <section id="servizi" className="pb-10 w-full bg-base-300 rounded-xl">
       <div className="p-10">
         <p className="text-4xl font-bold text-center">Servizi</p>
       </div>
@@ -72,7 +72,7 @@ function Services() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
