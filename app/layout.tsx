@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Modal from "./components/layout/Modal";
 import WhatsappRedirect from "./components/layout/WhatsappRedirect";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -50,6 +51,7 @@ export default function RootLayout({
         <WhatsappRedirect />
         <Footer />
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
