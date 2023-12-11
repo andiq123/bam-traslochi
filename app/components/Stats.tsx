@@ -7,17 +7,17 @@ function Stats() {
   return (
     <div className="flex justify-start lg:flex-row flex-col gap-3">
       <div className="stats lg:stats-horizontal stats-vertical shadow">
-        <div className="stat">
+        <div className="stat bg-base-300">
           <div className="stat-figure text-primary">
             <HeartFloating />
           </div>
-          <div className="stat-title">Esperienza di</div>
+          <div>Esperienza di</div>
           <div className="stat-value text-primary">
             {new Date().getFullYear() - 2012} Anni
           </div>
         </div>
 
-        <div className="stat">
+        <div className="stat bg-base-300">
           <div className="stat-figure text-secondary">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -33,9 +33,9 @@ function Stats() {
               ></path>
             </svg>
           </div>
-          <div className="stat-title">Più di</div>
+          <div>Più di</div>
           <div className="stat-value text-secondary">100 Clienti</div>
-          <div className="stat-desc">Più di 100 clienti soddisfatti.</div>
+          <div>Più di 100 clienti soddisfatti.</div>
         </div>
       </div>
       <Link
