@@ -6,12 +6,12 @@ import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer";
 import Modal from "./components/layout/Modal";
 import WhatsappRedirect from "./components/layout/WhatsappRedirect";
-import HeartFloating from "./components/layout/HeartFloating";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "BAM SRL Traslochi",
+  title: "BAM SRL Traslochi, traslochi verona.",
   description: `Traslochi BAM SRL: leader nei traslochi a Verona con ${
     new Date().getFullYear() - 2012
   } anni di esperienza. Servizi completi per traslochi aziendali, industriali, e residenziali.`,
@@ -49,6 +49,7 @@ export default function RootLayout({
         {children}
         <WhatsappRedirect />
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   );
