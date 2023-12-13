@@ -15,35 +15,38 @@ export default function TrasformareSpaziGuida() {
           </h2>
 
           <p className="mb-5">
-            Traslocare non deve essere solo un cambiamento di casa, ma anche
+            {`Traslocare non deve essere solo un cambiamento di casa, ma anche
             un'opportunità per trasformare gli spazi e rinnovare il tuo
             arredamento. In questa guida, scoprirai suggerimenti pratici per
             rendere il tuo trasloco un'occasione per trasformare positivamente
-            gli ambienti che ami.
+            gli ambienti che ami.`}
           </p>
 
           <p className="mb-5">
-            <strong>Valuta cosa conservare e cosa rinnovare:</strong> Prima di
+            <strong>Valuta cosa conservare e cosa rinnovare:</strong>
+            {`Prima di
             iniziare il trasloco, fai un'analisi critica dei tuoi mobili e
             oggetti. Decidi cosa desideri conservare, cosa puoi donare e cosa
             vuoi sostituire con nuovi elementi che riflettano il tuo stile
-            attuale.
+            attuale.`}
           </p>
 
           <p className="mb-5">
-            <strong>Crea uno stile coerente:</strong> Utilizza il trasloco come
+            <strong>Crea uno stile coerente:</strong>
+            {`Utilizza il trasloco come
             un'opportunità per creare uno stile di arredamento più coerente.
             Scegli colori, materiali e stili che si integrino bene tra loro,
-            creando un ambiente armonioso e accogliente.
+            creando un ambiente armonioso e accogliente.`}
           </p>
 
           {/* Optional Additional Content */}
           <p className="mb-5">
-            <strong>Aggiungi elementi di design:</strong> Investi in alcuni
+            <strong>Aggiungi elementi di design:</strong>
+            {`Investi in alcuni
             elementi di design che possano fare la differenza nell'aspetto
             complessivo della tua casa. Un lampadario elegante, una nuova opera
             d'arte o un tappeto di design possono trasformare gli spazi in modo
-            significativo.
+            significativo.`}
           </p>
 
           <div className="mt-8">
@@ -51,9 +54,9 @@ export default function TrasformareSpaziGuida() {
               Personalizza gli Ambienti
             </h3>
             <p className="mb-4">
-              Aggiungi tocchi personali agli ambienti. Fotografie, souvenirs e
+              {`Aggiungi tocchi personali agli ambienti. Fotografie, souvenirs e
               oggetti che hanno un significato speciale renderanno la tua casa
-              ancora più accogliente.
+              ancora più accogliente.`}
             </p>
           </div>
 
@@ -62,9 +65,9 @@ export default function TrasformareSpaziGuida() {
               Sfrutta la Luce Naturale
             </h3>
             <p className="mb-4">
-              Massimizza l'uso della luce naturale. Scegli tende leggere e
+              {`Massimizza l'uso della luce naturale. Scegli tende leggere e
               colori chiari per far entrare la luce e rendere gli spazi più
-              luminosi e ariosi.
+              luminosi e ariosi.`}
             </p>
           </div>
         </article>

@@ -14,35 +14,38 @@ export default function TraslocoStudentiUniversitari() {
           </h2>
 
           <p className="mb-5">
-            Il trasloco durante gli anni universitari può essere un'esperienza
+            {`Il trasloco durante gli anni universitari può essere un'esperienza
             eccitante, ma richiede una buona organizzazione per renderlo senza
             stress. In questa guida, scoprirai come organizzare al meglio il tuo
             trasloco da e per l'università, assicurandoti una transizione fluida
-            e senza intoppi.
+            e senza intoppi.`}
           </p>
 
           <p className="mb-5">
-            <strong>Pianifica in anticipo:</strong> Inizia a pianificare il tuo
+            <strong>Pianifica in anticipo:</strong>
+            {`Inizia a pianificare il tuo
             trasloco con sufficiente anticipo. Crea una lista di controllo
             dettagliata delle cose da fare e delle cose da portare con te.
             Questo ti aiuterà a evitare dimenticanze e a ridurre lo stress
-            dell'ultimo minuto.
+            dell'ultimo minuto.`}
           </p>
 
           <p className="mb-5">
-            <strong>Organizza i documenti:</strong> Assicurati di avere tutti i
+            <strong>Organizza i documenti:</strong>
+            {`Assicurati di avere tutti i
             documenti necessari organizzati e pronti. Questo potrebbe includere
             documenti accademici, contratti di locazione e documenti di
             identità. Mantieni una cartella dedicata per una facile
-            accessibilità.
+            accessibilità.`}
           </p>
 
           {/* Optional Additional Content */}
           <p className="mb-5">
-            <strong>Collabora con coinquilini:</strong> Se condividi l'alloggio
+            <strong>Collabora con coinquilini:</strong>
+            {`Se condividi l'alloggio
             con altri studenti, collabora con loro per organizzare il trasloco
             in modo coordinato. Condividere risorse e pianificare insieme può
-            semplificare il processo per tutti.
+            semplificare il processo per tutti.`}
           </p>
 
           <div className="mt-8">
@@ -50,10 +53,10 @@ export default function TraslocoStudentiUniversitari() {
               Scegli il Giusto Mezzo di Trasporto
             </h3>
             <p className="mb-4">
-              Valuta le opzioni di trasporto disponibili e scegli quella più
+              {`Valuta le opzioni di trasporto disponibili e scegli quella più
               adatta alle tue esigenze. Potrebbe essere un'auto, un furgone o
               anche il trasporto pubblico, a seconda della distanza e della
-              quantità di oggetti da trasportare.
+              quantità di oggetti da trasportare.`}
             </p>
           </div>
 
@@ -62,10 +65,10 @@ export default function TraslocoStudentiUniversitari() {
               Pianifica il Tempo del Trasloco
             </h3>
             <p className="mb-4">
-              Considera il periodo migliore per effettuare il trasloco, tenendo
+              {`Considera il periodo migliore per effettuare il trasloco, tenendo
               conto degli impegni accademici e delle condizioni meteorologiche.
               Pianificare attentamente il momento del trasloco può rendere
-              l'esperienza più agevole.
+              l'esperienza più agevole.`}
             </p>
           </div>
         </article>
