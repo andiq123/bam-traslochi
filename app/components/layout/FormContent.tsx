@@ -42,7 +42,9 @@ function FormContent() {
 
   return (
     <>
-      <div className="text-4xl font-bold">Invia la tua richiesta</div>
+      <div className="text-4xl font-bold text-secondary">
+        Invia la tua richiesta
+      </div>
       <div className="text-xl mt-4">
         <form
           className="flex flex-col gap-4"

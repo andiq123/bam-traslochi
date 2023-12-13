@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://www.bamsrl-traslochi.it/</loc>
-        <priority>1.0</priority>
-        <changefreq>Monthly</changefreq>
-    </url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://www.bamsrl-traslochi.it/sitemap_main.xml</loc>
+    <lastmod>2023-01-01T00:00:00+00:00</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.bamsrl-traslochi.it/sitemap_blogs.xml</loc>
+    <lastmod>2023-01-01T00:00:00+00:00</lastmod>
+  </sitemap>
+</sitemapindex>
