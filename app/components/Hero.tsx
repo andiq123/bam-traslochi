@@ -9,7 +9,7 @@ function Hero() {
       id="home"
       className="flex lg:flex-row flex-col justify-center gap-10"
     >
-      <div className="flex-2 flex rounded-t-xl relative overflow-hidden">
+      <div className="flex rounded-t-xl relative overflow-hidden">
         <div className="w-[100vw]">
           <Image
             src={TraslochiHome}
@@ -31,7 +31,7 @@ function Hero() {
         </div>
       </div>
 
-      <div className="hidden lg:block lg:flex-1 bg-base-300 rounded-xl">
+      <div className="hidden lg:block bg-base-300 rounded-xl">
         <div className="p-10">
           <FormContent />
         </div>
