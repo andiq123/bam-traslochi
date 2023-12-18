@@ -11,7 +11,7 @@ function About() {
     >
       <div className="flex-1 rounded-xl overflow-hidden bg-base-300 p-10">
         <div className="text-4xl font-bold flex items-center gap-5">
-          <FontAwesomeIcon icon={faTruck} className="h-14 w-14" />{" "}
+          <FontAwesomeIcon icon={faTruck} className="h-14 w-14" />
           <span>Chi siamo?</span>
         </div>
         <article className="text-xl mt-4 leading-8">
