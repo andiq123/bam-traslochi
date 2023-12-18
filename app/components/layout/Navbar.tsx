@@ -10,15 +10,47 @@ type MenuItem = {
 const menu: MenuItem[] = [
   {
     name: "Home",
-    href: "#home",
+    href: "/#home",
   },
   {
     name: "Contatti",
-    href: "#contatti",
+    href: "/#contatti", // Replace with the actual URL
   },
   {
     name: "Servizi",
-    href: "#servizi",
+    href: "/#servizi", // Replace with the actual URL
+  },
+
+  {
+    name: "Montaggio Mobili",
+    href: "/montaggio-mobili",
+  },
+  {
+    name: "Noleggio Scale",
+    href: "/noleggio-scale-aeree-con-operatore",
+  },
+];
+
+const blogs: MenuItem[] = [
+  {
+    name: "Blog 1",
+    href: "/blogs/alzare-livello-trasloco-utilizzare-montacarichi-spostamenti-senza-problemi",
+  },
+  {
+    name: "Blog 2",
+    href: "/blogs/dominare-gli-spostamenti-durante-le-vacanze-consigli-per-un-viaggio-senza-stress",
+  },
+  {
+    name: "Blog 3",
+    href: "/blogs/trasformare-gli-spazi-guida-rinnovare-arredamento-trasloco",
+  },
+  {
+    name: "Blog 4",
+    href: "/blogs/traslochi-verona-guida-consigli-spostamento-senza-stress",
+  },
+  {
+    name: "Blog 5",
+    href: "/blogs/trasloco-per-studenti-universitari-come-organizzarlo-al-meglio",
   },
 ];
 
@@ -62,7 +94,7 @@ function Navbar() {
               </label>
             </div>
             <div className="flex-none hidden lg:block font-bold">
-              <ul className="flex">
+              <ul className="menu menu-horizontal px-1">
                 {menu.map((item) => (
                   <li key={item.name}>
                     <Link
@@ -73,6 +105,23 @@ function Navbar() {
                     </Link>
                   </li>
                 ))}
+                <li className="hover:bg-base-200 rounded-lg cursor-pointer">
+                  <details>
+                    <summary className="p-3">Blogs</summary>
+                    <ul className="bg-base-100 rounded-t-none w-32 m-0 p-0">
+                      {blogs.map((item) => (
+                        <li key={item.name}>
+                          <Link
+                            href={item.href}
+                            className="hover:bg-base-200 rounded-lg py-3 px-5"
+                          >
+                            {item.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                </li>
               </ul>
             </div>
           </div>
@@ -95,6 +144,23 @@ function Navbar() {
               </Link>
             </li>
           ))}
+          <li className="hover:bg-base-200 rounded-lg cursor-pointer">
+            <details>
+              <summary className="p-3">Blogs</summary>
+              <ul className="bg-base-100 rounded-t-none w-full m-0 p-0">
+                {blogs.map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      href={item.href}
+                      className="hover:bg-base-200 rounded-lg px-5 py-3"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          </li>
         </ul>
       </div>
     </header>
