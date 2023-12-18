@@ -2,7 +2,6 @@ import Image from "next/image";
 import TraslochiHome from "../../public/images/traslochi-home.webp";
 import OpenModal from "./layout/OpenModal";
 import FormContent from "./layout/FormContent";
-
 function Hero() {
   return (
     <section
@@ -32,12 +31,13 @@ function Hero() {
       </div>
 
       <div className="hidden lg:block bg-base-300 rounded-xl">
-        <div className="p-10">
+        <div className="p-10 flex flex-col gap-3">
           <FormContent />
+          <OpenModal hideExpand={false} />
         </div>
       </div>
 
-      <OpenModal />
+      <OpenModal hideExpand={true} />
     </section>
   );
 }
