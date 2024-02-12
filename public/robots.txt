@@ -1,4 +1,0 @@
-# Allow all crawlers
-User-agent: *
-
-Sitemap: https://bamsrl-traslochi.it/sitemap.xml
